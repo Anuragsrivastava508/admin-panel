@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 20;display:inline-block;vertical-align:middle;line-height:1;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#e5eeff","surface-subtle":"#F1F5F9","on-surface-variant":"#45464d","on-background":"#0b1c30","background":"#f8f9ff","on-primary-container":"#7c839b","secondary-container":"#fe932c","secondary":"#904d00","on-secondary-fixed":"#2f1500","secondary-fixed-dim":"#ffb77d","inverse-primary":"#bec6e0","surface-variant":"#d3e4fe","surface-container-low":"#eff4ff","primary-container":"#131b2e","gold-subtle":"#FEF3C7","error-container":"#ffdad6","surface-container-highest":"#d3e4fe","primary-fixed-dim":"#bec6e0","on-tertiary":"#ffffff","on-secondary":"#ffffff","on-tertiary-fixed-variant":"#005236","tertiary-container":"#002113","status-verified":"#059669","on-primary-fixed-variant":"#3f465c","status-alert":"#EF4444","error":"#ba1a1a","inverse-on-surface":"#eaf1ff","on-tertiary-fixed":"#002113","border-strong":"#334155","surface-bright":"#f8f9ff","gold-light":"#F59E0B","on-secondary-container":"#663500","status-alert-bg":"#FEF2F2","outline":"#76777d","surface":"#f8f9ff","charcoal-accent":"#1E293B","tertiary":"#000000","surface-tint":"#565e74","on-error-container":"#93000a","tertiary-fixed":"#6ffbbe","surface-canvas":"#F8FAFC","inverse-surface":"#213145","on-error":"#ffffff","on-tertiary-container":"#009668","primary":"#000000","on-primary-fixed":"#131b2e","on-primary":"#ffffff","status-verified-bg":"#ECFDF5","tertiary-fixed-dim":"#4edea3","surface-card":"#FFFFFF","on-secondary-fixed-variant":"#6e3900","primary-fixed":"#dae2fd","surface-container-high":"#dce9ff","secondary-fixed":"#ffdcc3","surface-container-lowest":"#ffffff","border-clean":"#E2E8F0","surface-dim":"#cbdbf5","outline-variant":"#c6c6cd","on-surface":"#0b1c30"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","margin":"1.5rem","gutter-lg":"1.5rem","margin-mobile":"1rem","gutter":"1rem","space-xl":"2rem","space-lg":"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"display-lg-mobile":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"metric-val":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"]},"fontSize":{"display-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"metric-val":["24px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface-canvas text-on-surface font-body-md text-body-md min-h-screen antialiased selection:bg-gold-subtle selection:text-secondary"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-card border-r border-border-clean z-50 flex flex-col justify-between select-none shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-border-clean bg-surface-card"><div class="w-9 h-9 rounded-xl bg-charcoal-accent flex items-center justify-center text-on-primary shadow-sm ring-1 ring-border-strong/20"><span class="material-symbols-outlined text-[20px] text-gold-light">directions_bus</span></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-charcoal-accent tracking-tight leading-none truncate font-bold">BUDHRAM</span><span class="font-label-sm text-[10px] text-outline tracking-wider uppercase font-semibold leading-tight mt-0.5 truncate">Tour & Travels CMS</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs text-[11px] font-label-sm uppercase tracking-wider text-outline font-bold">Operations & CMS</div></div><nav class="flex flex-col gap-0.5 px-space-md flex-1 overflow-y-auto" data-active-classes="bg-charcoal-accent text-on-primary font-bold shadow-sm"><a aria-current="page" class="flex items-center gap-space-sm px-3 py-2 rounded-lg transition-colors bg-charcoal-accent text-on-primary font-bold shadow-sm" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[19px]">dashboard</span><span class="truncate">Dashboard</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="homepage-cms" href="#"><span class="material-symbols-outlined text-[19px]">web</span><span class="truncate">Homepage CMS</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="services" href="#"><span class="material-symbols-outlined text-[19px]">verified</span><span class="truncate">Services</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="packages-and-circuits" href="#"><span class="material-symbols-outlined text-[19px]">location_on</span><span class="truncate">Packages & Circuits</span></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="enquiries-and-bookings" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-[19px]">inbox</span><span class="truncate">Enquiries & Bookings</span></div><span class="bg-secondary text-on-secondary text-[10px] font-bold px-1.5 py-0.5 rounded-full font-label-sm leading-none">12</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="media-gallery" href="#"><span class="material-symbols-outlined text-[19px]">photo_library</span><span class="truncate">Media Gallery</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="testimonials" href="#"><span class="material-symbols-outlined text-[19px]">star</span><span class="truncate">Testimonials</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="contact-and-business-info" href="#"><span class="material-symbols-outlined text-[19px]">call</span><span class="truncate">Contact & Business</span></a><div class="my-2 border-t border-border-clean"></div><div class="px-space-sm py-1 text-[11px] font-label-sm uppercase tracking-wider text-outline font-bold">Governance</div><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="seo-settings" href="#"><span class="material-symbols-outlined text-[19px]">language</span><span class="truncate">SEO Settings</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="admin-settings" href="#"><span class="material-symbols-outlined text-[19px]">settings</span><span class="truncate">Admin Settings</span></a></nav></div><div class="p-space-md border-t border-border-clean bg-surface-subtle/50"><div class="flex items-center justify-between rounded-lg p-space-sm bg-surface-card border border-border-clean"><div class="flex items-center gap-2 min-w-0"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-verified opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-status-verified"></span></span><span class="text-[11px] font-label-sm text-charcoal-accent font-semibold truncate">Engine v2.4</span></div><span class="text-[10px] font-label-sm px-1.5 py-0.5 rounded bg-status-verified-bg text-status-verified font-bold">HEALTHY</span></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-card/95 backdrop-blur border-b border-border-clean z-40 flex items-center justify-between px-space-lg shadow-[0_1px_2px_-1px_rgba(15,23,42,0.03)]"><div class="flex items-center gap-space-md"><div class="flex flex-col"><div class="flex items-center gap-2"><h1 class="font-headline-sm text-headline-sm text-charcoal-accent font-bold tracking-tight leading-tight">BUDHRAM TOUR & TRAVELS</h1><span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-label-sm font-semibold bg-status-verified-bg text-status-verified border border-status-verified/20"><span class="w-1.5 h-1.5 rounded-full bg-status-verified"></span>Live Sync: budhramtravels.com</span></div><p class="font-body-sm text-body-sm text-outline leading-none mt-0.5">Official Website Admin & CMS</p></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-72 pl-9 pr-12 py-1.5 text-body-sm font-body-sm rounded-lg border border-border-clean bg-surface-canvas text-on-surface placeholder-outline focus:outline-none focus:border-charcoal-accent focus:ring-1 focus:ring-charcoal-accent transition-all" placeholder="Search packages, fleet, leads..." type="text"/><kbd class="absolute right-2.5 top-2 px-1.5 py-0.5 text-[10px] font-label-sm font-semibold text-outline bg-surface-card border border-border-clean rounded shadow-xs">⌘K</kbd></div><a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border border-border-clean bg-surface-card text-charcoal-accent font-label-md text-label-md font-semibold hover:bg-surface-subtle transition-colors shadow-xs" href="https://budhramtravels.com/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px] text-secondary">open_in_new</span><span>Visit Website</span></a><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-charcoal-accent transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-secondary text-on-secondary text-[9px] font-bold font-label-sm ring-2 ring-surface-card">3</span></button><div class="h-6 w-px bg-border-clean mx-1"></div><div class="flex items-center gap-space-sm pl-1 cursor-pointer group"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col text-left"><div class="flex items-center gap-1"><span class="font-label-md text-label-md font-bold text-charcoal-accent leading-none group-hover:text-secondary transition-colors">Deepanshu Prajapati</span><span class="material-symbols-outlined text-[16px] text-outline leading-none">expand_more</span></div><span class="font-label-sm text-[11px] text-outline font-medium leading-tight mt-0.5">Super Admin</span></div></div></div></header><main class="flex-1 pt-16 w-full px-space-lg py-space-lg bg-surface-canvas"><div class="flex flex-col w-full">
+<!-- Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 px-4 py-3 rounded-xl bg-charcoal-accent text-on-primary shadow-xl" id="toastNotification">
+<span class="material-symbols-outlined text-gold-light text-[22px]" id="toastIcon">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-primary" id="toastTitle">Sync Completed</span>
+<span class="font-body-sm text-[12px] text-surface-subtle" id="toastMsg">Changes saved and synced with budhramtravels.com</span>
+</div>
+</div>
+<!-- SECTION 1: DASHBOARD OVERVIEW -->
+<div class="cms-section flex flex-col gap-space-lg" id="section-dashboard">
+<!-- Header Context & Quick Actions -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-lg text-headline-lg font-bold text-charcoal-accent">Operations Dispatch Hub</h2>
+<span class="px-2.5 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-gold-subtle text-secondary">LIVE FLEET</span>
+</div>
+<p class="font-body-md text-body-md text-outline mt-1">Real-time CMS sync for Luxury Force Travellers, Himachal Circuits, and Pan-India Inquiries.</p>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-charcoal-accent text-on-primary font-label-md text-label-md font-semibold hover:bg-slate-800 transition-all shadow-sm" onclick="openModal('modal-add-package')">
+<span class="material-symbols-outlined text-[18px]">add_location_alt</span>
+<span>Add Package</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-card text-charcoal-accent font-label-md text-label-md font-semibold shadow-sm hover:bg-surface-subtle transition-all" onclick="openModal('modal-add-service')">
+<span class="material-symbols-outlined text-[18px] text-secondary">add_circle</span>
+<span>Add Service</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold shadow-sm hover:bg-amber-700 transition-all" onclick="triggerGlobalSync()">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+<span>Sync to Public Web</span>
+</button>
+</div>
+</div>
+<!-- Live Sync Progress Bar (Conditional Trigger) -->
+<div class="hidden rounded-xl bg-surface-card p-4 shadow-sm transition-all" id="syncProgressContainer">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1.5 text-charcoal-accent">
+<span class="flex items-center gap-1.5 font-bold"><span class="material-symbols-outlined text-[16px] text-secondary animate-spin">sync</span> Regenerating Static Cache & Edge Assets...</span>
+<span class="font-bold" id="syncPercent">65%</span>
+</div>
+<div class="w-full bg-surface-subtle h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full transition-all duration-300" id="syncProgressBar" style="width: 65%;"></div>
+</div>
+</div>
+<!-- 5 Core Metrics Bento -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Metric 1 -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-outline mb-2">
+<span class="font-label-sm uppercase tracking-wider font-bold">Total Inquiries</span>
+<div class="w-8 h-8 rounded-lg bg-surface-subtle flex items-center justify-center text-charcoal-accent">
+<span class="material-symbols-outlined text-[18px]">inbox</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-bold text-charcoal-accent">148</span>
+<span class="text-[11px] font-label-sm font-bold text-status-verified bg-status-verified-bg px-1.5 py-0.5 rounded">+12 this wk</span>
+</div>
+<p class="font-body-sm text-[12px] text-outline mt-1 truncate">72 Confirmed bookings</p>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-outline mb-2">
+<span class="font-label-sm uppercase tracking-wider font-bold">Action Needed</span>
+<div class="w-8 h-8 rounded-lg bg-gold-subtle flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">mark_chat_unread</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-bold text-secondary">14</span>
+<span class="text-[11px] font-label-sm font-bold text-secondary bg-gold-subtle px-1.5 py-0.5 rounded">Pending Call</span>
+</div>
+<p class="font-body-sm text-[12px] text-outline mt-1 truncate">WhatsApp Leads Direct</p>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-outline mb-2">
+<span class="font-label-sm uppercase tracking-wider font-bold">Active Circuits</span>
+<div class="w-8 h-8 rounded-lg bg-surface-subtle flex items-center justify-center text-charcoal-accent">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-bold text-charcoal-accent">6</span>
+<span class="text-[11px] font-label-sm font-bold text-charcoal-accent bg-surface-subtle px-1.5 py-0.5 rounded">All Verified</span>
+</div>
+<p class="font-body-sm text-[12px] text-outline mt-1 truncate">Manali, Spiti, Rajasthan</p>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-outline mb-2">
+<span class="font-label-sm uppercase tracking-wider font-bold">Fleet Classes</span>
+<div class="w-8 h-8 rounded-lg bg-surface-subtle flex items-center justify-center text-charcoal-accent">
+<span class="material-symbols-outlined text-[18px]">airport_shuttle</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-bold text-charcoal-accent">4</span>
+<span class="text-[11px] font-label-sm font-bold text-status-verified bg-status-verified-bg px-1.5 py-0.5 rounded">100% Ready</span>
+</div>
+<p class="font-body-sm text-[12px] text-outline mt-1 truncate">12S & 17S Pushback Force</p>
+</div>
+</div>
+<!-- Metric 5 -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-outline mb-2">
+<span class="font-label-sm uppercase tracking-wider font-bold">Client Rating</span>
+<div class="w-8 h-8 rounded-lg bg-gold-subtle flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">stars</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-bold text-charcoal-accent">4.9</span>
+<span class="text-[11px] font-label-sm font-bold text-secondary bg-gold-subtle px-1.5 py-0.5 rounded">8 Reviews</span>
+</div>
+<p class="font-body-sm text-[12px] text-outline mt-1 truncate">Google & Web Verified</p>
+</div>
+</div>
+</div>
+<!-- Main Grid: Recent Bookings & Fleet Status -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Recent Enquiries Table (8 cols) -->
+<div class="lg:col-span-8 bg-surface-card rounded-xl shadow-sm p-5 flex flex-col">
+<div class="flex items-center justify-between pb-4 mb-4">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Live Trip Enquiries</h3>
+<span class="text-[11px] font-label-sm font-bold px-2 py-0.5 rounded bg-surface-subtle text-outline">Real-time</span>
+</div>
+<button class="font-label-md text-label-md font-semibold text-secondary hover:underline flex items-center gap-1" onclick="switchTab('enquiries-and-bookings')">
+<span>View All (148)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="text-[11px] font-label-sm uppercase text-outline">
+<th class="pb-3 pr-4 font-bold">Customer</th>
+<th class="pb-3 px-4 font-bold">Circuit / Date</th>
+<th class="pb-3 px-4 font-bold">Vehicle</th>
+<th class="pb-3 px-4 font-bold">Status</th>
+<th class="pb-3 pl-4 text-right font-bold">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-clean/60 font-body-sm">
+<tr class="hover:bg-surface-canvas transition-colors">
+<td class="py-3.5 pr-4">
+<div class="font-label-lg font-bold text-charcoal-accent">Suresh Kumar</div>
+<div class="text-[11px] text-outline flex items-center gap-1 font-mono">+91 98112-44120</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-medium text-charcoal-accent block">Manali & Atal Tunnel</span>
+<span class="text-[11px] text-outline">18 Nov • 6 Days</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="text-[12px] font-semibold text-charcoal-accent bg-surface-subtle px-2 py-1 rounded">12S Pushback</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-gold-subtle text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>New Lead
+                  </span>
+</td>
+<td class="py-3.5 pl-4 text-right">
+<a class="inline-flex items-center gap-1 text-[12px] font-label-md font-semibold text-status-verified bg-status-verified-bg px-2.5 py-1 rounded-lg hover:bg-emerald-100 transition-colors" href="https://wa.me/919310847853?text=Namaste%20Suresh%20ji,%20Budhram%20Tour%20and%20Travels%20has%20received%20your%20Manali%20booking%20enquiry." target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span> WhatsApp
+                  </a>
+</td>
+</tr>
+<tr class="hover:bg-surface-canvas transition-colors">
+<td class="py-3.5 pr-4">
+<div class="font-label-lg font-bold text-charcoal-accent">Rohit Goyal</div>
+<div class="text-[11px] text-outline flex items-center gap-1 font-mono">+91 98721-39918</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-medium text-charcoal-accent block">Kasol, Manikaran & Jibhi</span>
+<span class="text-[11px] text-outline">24 Nov • 5 Days</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="text-[12px] font-semibold text-charcoal-accent bg-surface-subtle px-2 py-1 rounded">17S Coach</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-status-verified-bg text-status-verified">
+<span class="w-1.5 h-1.5 rounded-full bg-status-verified"></span>Confirmed
+                  </span>
+</td>
+<td class="py-3.5 pl-4 text-right">
+<button class="inline-flex items-center gap-1 text-[12px] font-label-md font-semibold text-charcoal-accent bg-surface-subtle px-2.5 py-1 rounded-lg hover:bg-slate-200 transition-colors" onclick="showLeadDetails('Rohit Goyal', '+91 98721-39918', 'Kasol Manikaran', '17S Force Coach', 'Driver Mohan assigned, KM base advance cleared.')">
+                    Inspect
+                  </button>
+</td>
+</tr>
+<tr class="hover:bg-surface-canvas transition-colors">
+<td class="py-3.5 pr-4">
+<div class="font-label-lg font-bold text-charcoal-accent">Vikas Sharma</div>
+<div class="text-[11px] text-outline flex items-center gap-1 font-mono">+91 94140-52219</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-medium text-charcoal-accent block">Rajasthan Heritage Ring</span>
+<span class="text-[11px] text-outline">02 Dec • 8 Days</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="text-[12px] font-semibold text-charcoal-accent bg-surface-subtle px-2 py-1 rounded">Executive Cruiser</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-surface-subtle text-charcoal-accent">
+                    Contacted
+                  </span>
+</td>
+<td class="py-3.5 pl-4 text-right">
+<button class="inline-flex items-center gap-1 text-[12px] font-label-md font-semibold text-charcoal-accent bg-surface-subtle px-2.5 py-1 rounded-lg hover:bg-slate-200 transition-colors" onclick="showLeadDetails('Vikas Sharma', '+91 94140-52219', 'Rajasthan Heritage', 'Executive Luxury Cruiser', 'Quote generated with transparent KM meter slab.')">
+                    Inspect
+                  </button>
+</td>
+</tr>
+<tr class="hover:bg-surface-canvas transition-colors">
+<td class="py-3.5 pr-4">
+<div class="font-label-lg font-bold text-charcoal-accent">Ananya Sen</div>
+<div class="text-[11px] text-outline flex items-center gap-1 font-mono">+91 98302-88194</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-medium text-charcoal-accent block">Dharamshala & Spiti High Pass</span>
+<span class="text-[11px] text-outline">12 Dec • 9 Days</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="text-[12px] font-semibold text-charcoal-accent bg-surface-subtle px-2 py-1 rounded">12S Mountain Spec</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-gold-subtle text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>New Lead
+                  </span>
+</td>
+<td class="py-3.5 pl-4 text-right">
+<a class="inline-flex items-center gap-1 text-[12px] font-label-md font-semibold text-status-verified bg-status-verified-bg px-2.5 py-1 rounded-lg hover:bg-emerald-100 transition-colors" href="https://wa.me/919310847853?text=Namaste%20Ananya%20ji,%20regarding%20your%20Spiti%20and%20Dharamshala%20Force%20booking" target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span> WhatsApp
+                  </a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Quick Operations Pane & System Status (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Honest KM Guarantee Module -->
+<div class="bg-surface-card rounded-xl p-5 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm uppercase tracking-wider text-outline font-bold">Integrity Metric</span>
+<span class="text-[11px] font-label-sm font-bold px-2 py-0.5 rounded bg-status-verified-bg text-status-verified">100% AUDITED</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent mb-1">Honest KM Meter Policy</h4>
+<p class="font-body-sm text-[13px] text-outline mb-4">Zero artificial odometer surges. Customer trip sheets locked with real-time GPS telemetry.</p>
+<div class="p-3 rounded-lg bg-surface-subtle flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">speed</span>
+<span class="font-label-md text-label-md font-bold text-charcoal-accent">Meter Variance</span>
+</div>
+<span class="font-mono font-bold text-[13px] text-status-verified">0.00% Error</span>
+</div>
+</div>
+<!-- Quick CMS Navigation Tiles -->
+<div class="bg-surface-card rounded-xl p-5 shadow-sm flex flex-col gap-3">
+<h4 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent mb-1">Direct Module Jump</h4>
+<button class="flex items-center justify-between p-2.5 rounded-lg bg-surface-subtle hover:bg-slate-200 transition-colors text-left group" onclick="switchTab('homepage-cms')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-charcoal-accent text-[20px]">view_quilt</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-charcoal-accent block">Homepage Content</span>
+<span class="font-body-sm text-[11px] text-outline">Hero banner, WhatsApp CTA & 4 Pillars</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-charcoal-accent text-[18px]">chevron_right</span>
+</button>
+<button class="flex items-center justify-between p-2.5 rounded-lg bg-surface-subtle hover:bg-slate-200 transition-colors text-left group" onclick="switchTab('packages-and-circuits')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-charcoal-accent text-[20px]">map</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-charcoal-accent block">Tour Circuits</span>
+<span class="font-body-sm text-[11px] text-outline">Manage Atal Tunnel, Kasol & Spiti</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-charcoal-accent text-[18px]">chevron_right</span>
+</button>
+<button class="flex items-center justify-between p-2.5 rounded-lg bg-surface-subtle hover:bg-slate-200 transition-colors text-left group" onclick="switchTab('contact-and-business-info')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-charcoal-accent text-[20px]">support_agent</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-charcoal-accent block">24/7 Dispatch Desk</span>
+<span class="font-body-sm text-[11px] text-outline">+91 9310847853 Phone & Email</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-charcoal-accent text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: HOMEPAGE CMS -->
+<div class="cms-section hidden flex flex-col gap-space-lg" id="section-homepage-cms">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-charcoal-accent">Homepage CMS Architecture</h2>
+<p class="font-body-md text-body-md text-outline mt-1">Directly curate the 7 modular sections appearing on budhramtravels.com</p>
+</div>
+<div class="flex items-center gap-2">
+<a class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-card text-charcoal-accent font-label-md text-label-md font-semibold shadow-sm hover:bg-surface-subtle transition-all" href="https://budhramtravels.com/" target="_blank">
+<span class="material-symbols-outlined text-[18px]">preview</span>
+<span>Open Live Preview</span>
+</a>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-charcoal-accent text-on-primary font-label-md text-label-md font-semibold hover:bg-slate-800 transition-all shadow-sm" onclick="showToast('Homepage CMS saved!', 'All 7 live sections updated seamlessly.')">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Changes</span>
+</button>
+</div>
+</div>
+<!-- Editable Accordion List for the 7 Sections -->
+<div class="flex flex-col gap-4">
+<!-- 1. Hero Section -->
+<div class="bg-surface-card rounded-xl p-5 shadow-sm">
+<div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('acc-hero')">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-lg bg-charcoal-accent text-on-primary flex items-center justify-center font-bold text-[12px]">01</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Hero Header Section</h3>
+<p class="font-body-sm text-[12px] text-outline">Primary value proposition, marquee, and instant quotation triggers</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline" id="icon-acc-hero">expand_more</span>
+</div>
+<div class="mt-4 pt-4 border-t border-border-clean/60 grid grid-cols-1 md:grid-cols-2 gap-4" id="acc-hero">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Main Heading</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-body-md focus:outline-none focus:ring-1 focus:ring-charcoal-accent" type="text" value="India's Great Roads, Travelled in Utmost Luxury"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Sub-headline Description</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-body-md focus:outline-none focus:ring-1 focus:ring-charcoal-accent" type="text" value="Pan-India Private Charter Fleet • Transparent Kilometre Meter Billing"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Primary Action Button Text</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-body-md focus:outline-none focus:ring-1 focus:ring-charcoal-accent" type="text" value="Calculate Instant KM Quotation"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">WhatsApp Direct Button Text</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-body-md focus:outline-none focus:ring-1 focus:ring-charcoal-accent" type="text" value="WhatsApp Dispatch (+91 9310847853)"/>
+</div>
+<div class="md:col-span-2 flex items-center justify-between pt-2">
+<div class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 rounded text-charcoal-accent" id="heroActive" type="checkbox"/>
+<label class="font-label-md text-label-md text-charcoal-accent" for="heroActive">Display Hero banner on homepage</label>
+</div>
+<span class="text-[11px] font-label-sm text-status-verified font-bold">STATUS: PUBLISHED</span>
+</div>
+</div>
+</div>
+<!-- 2. About Section -->
+<div class="bg-surface-card rounded-xl p-5 shadow-sm">
+<div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('acc-about')">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-lg bg-surface-subtle text-charcoal-accent flex items-center justify-center font-bold text-[12px]">02</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">About Budhram Tour & Travels</h3>
+<p class="font-body-sm text-[12px] text-outline">Company history, fleet capabilities, and corporate pedigree</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline" id="icon-acc-about">expand_more</span>
+</div>
+<div class="mt-4 pt-4 border-t border-border-clean/60 hidden flex flex-col gap-4" id="acc-about">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Section Title</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-body-md focus:outline-none focus:ring-1 focus:ring-charcoal-accent" type="text" value="Budhram Tour And Travels Provides Trips & Travel Services Across India"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Narrative Description</label>
+<textarea class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-body-md focus:outline-none focus:ring-1 focus:ring-charcoal-accent" rows="3">Budhram Tour and Travels delivers luxury charter transport throughout India with executive Force Tempo Travellers. We specialize in bespoke Himalayan tours, corporate retreats, and family pilgrimages with verified mountain drivers.</textarea>
+</div>
+</div>
+</div>
+<!-- 3. Four Core Pillars -->
+<div class="bg-surface-card rounded-xl p-5 shadow-sm">
+<div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('acc-pillars')">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-lg bg-surface-subtle text-charcoal-accent flex items-center justify-center font-bold text-[12px]">03</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">4 Core Trust Pillars</h3>
+<p class="font-body-sm text-[12px] text-outline">The foundational guarantees displayed in homepage grid</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline" id="icon-acc-pillars">expand_more</span>
+</div>
+<div class="mt-4 pt-4 border-t border-border-clean/60 hidden grid grid-cols-1 md:grid-cols-2 gap-3" id="acc-pillars">
+<div class="p-3 bg-surface-canvas rounded-lg">
+<span class="font-label-sm text-[10px] uppercase font-bold text-secondary">Pillar 1</span>
+<input class="w-full mt-1 px-2.5 py-1.5 text-body-sm font-semibold rounded bg-surface-card border border-border-clean" type="text" value="100% Honest Odometer KM Billing"/>
+</div>
+<div class="p-3 bg-surface-canvas rounded-lg">
+<span class="font-label-sm text-[10px] uppercase font-bold text-secondary">Pillar 2</span>
+<input class="w-full mt-1 px-2.5 py-1.5 text-body-sm font-semibold rounded bg-surface-card border border-border-clean" type="text" value="Luxury Pushback Recliner Seating"/>
+</div>
+<div class="p-3 bg-surface-canvas rounded-lg">
+<span class="font-label-sm text-[10px] uppercase font-bold text-secondary">Pillar 3</span>
+<input class="w-full mt-1 px-2.5 py-1.5 text-body-sm font-semibold rounded bg-surface-card border border-border-clean" type="text" value="Mountain-Vetted Expert Chauffeurs"/>
+</div>
+<div class="p-3 bg-surface-canvas rounded-lg">
+<span class="font-label-sm text-[10px] uppercase font-bold text-secondary">Pillar 4</span>
+<input class="w-full mt-1 px-2.5 py-1.5 text-body-sm font-semibold rounded bg-surface-card border border-border-clean" type="text" value="24/7 Dedicated Dispatch Desk (+91 9310847853)"/>
+</div>
+</div>
+</div>
+<!-- 4, 5, 6, 7 Modular summaries -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-surface-card rounded-xl p-5 shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-[11px] uppercase font-bold text-outline">Section 04</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Fleet & Services Block</h4>
+<p class="font-body-sm text-[12px] text-outline">4 Active services displayed on home</p>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-subtle text-charcoal-accent font-label-md font-semibold hover:bg-slate-200 text-[12px]" onclick="switchTab('services')">Configure</button>
+</div>
+<div class="bg-surface-card rounded-xl p-5 shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-[11px] uppercase font-bold text-outline">Section 05</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Featured Circuits</h4>
+<p class="font-body-sm text-[12px] text-outline">Himalayan & Rajasthan tours showcased</p>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-subtle text-charcoal-accent font-label-md font-semibold hover:bg-slate-200 text-[12px]" onclick="switchTab('packages-and-circuits')">Configure</button>
+</div>
+<div class="bg-surface-card rounded-xl p-5 shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-[11px] uppercase font-bold text-outline">Section 06</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Testimonials Carousel</h4>
+<p class="font-body-sm text-[12px] text-outline">Top 3 verified traveler reviews linked</p>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-subtle text-charcoal-accent font-label-md font-semibold hover:bg-slate-200 text-[12px]" onclick="switchTab('testimonials')">Configure</button>
+</div>
+<div class="bg-surface-card rounded-xl p-5 shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-[11px] uppercase font-bold text-outline">Section 07</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Emergency WhatsApp CTA</h4>
+<p class="font-body-sm text-[12px] text-outline">Bottom banner directing to +91 9310847853</p>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-subtle text-charcoal-accent font-label-md font-semibold hover:bg-slate-200 text-[12px]" onclick="switchTab('contact-and-business-info')">Configure</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: SERVICES MANAGEMENT -->
+<div class="cms-section hidden flex flex-col gap-space-lg" id="section-services">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-charcoal-accent">Fleet Services Management</h2>
+<p class="font-body-md text-body-md text-outline mt-1">Manage luxury vehicle classifications, seating configurations, and luxury inclusions.</p>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-charcoal-accent text-on-primary font-label-md text-label-md font-semibold hover:bg-slate-800 transition-all shadow-sm" onclick="openModal('modal-add-service')">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Service Offering</span>
+</button>
+</div>
+<!-- Fleet Service Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md" id="servicesGrid">
+<!-- Service 1 -->
+<div class="bg-surface-card rounded-xl shadow-sm p-5 flex flex-col justify-between service-card hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-start justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-charcoal-accent text-gold-light flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">airport_shuttle</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-status-verified-bg text-status-verified">ACTIVE</span>
+<button class="text-outline hover:text-error transition-colors" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Luxury Force Executive Cruiser</h3>
+<p class="font-body-sm text-[13px] text-outline mt-1 mb-4">12-17S Flagship configuration featuring dual high-cool air conditioning, Maharaja pushback recliners, and massive luggage boot.</p>
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="text-[11px] font-label-sm bg-surface-subtle text-charcoal-accent px-2 py-0.5 rounded font-semibold">Dual AC</span>
+<span class="text-[11px] font-label-sm bg-surface-subtle text-charcoal-accent px-2 py-0.5 rounded font-semibold">Maharaja Recliner</span>
+<span class="text-[11px] font-label-sm bg-surface-subtle text-charcoal-accent px-2 py-0.5 rounded font-semibold">Pan-India Permit</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-border-clean/60">
+<span class="text-[12px] font-label-md font-bold text-secondary">Starting at Transparent KM Slab</span>
+<button class="text-[12px] font-label-md font-semibold text-charcoal-accent hover:underline" onclick="openModal('modal-add-service')">Edit Service</button>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface-card rounded-xl shadow-sm p-5 flex flex-col justify-between service-card hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-start justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-surface-subtle text-charcoal-accent flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">airline_seat_recline_extra</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-status-verified-bg text-status-verified">ACTIVE</span>
+<button class="text-outline hover:text-error transition-colors" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">12 Seater Force Pushback Traveller</h3>
+<p class="font-body-sm text-[13px] text-outline mt-1 mb-4">Engineered for family mountain expeditions. Fitted with individual USB fast-charging ports and acoustic wooden floor panels.</p>
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="text-[11px] font-label-sm bg-surface-subtle text-charcoal-accent px-2 py-0.5 rounded font-semibold">12 Passenger Pushback</span>
+<span class="text-[11px] font-label-sm bg-surface-subtle text-charcoal-accent px-2 py-0.5 rounded font-semibold">USB at Every Seat</span>
+<span class="text-[11px] font-label-sm bg-surface-subtle text-charcoal-accent px-2 py-0.5 rounded font-semibold">Acoustic Floor</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-border-clean/60">
+<span class="text-[12px] font-label-md font-bold text-secondary">Ideal for Spiti & Manali</span>
+<button class="text-[12px] font-label-md font-semibold text-charcoal-accent hover:underline" onclick="openModal('modal-add-service')">Edit Service</button>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="bg-surface-card rounded-xl shadow-sm p-5 flex flex-col justify-between service-card hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-start justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-surface-subtle text-charcoal-accent flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-status-verified-bg text-status-verified">ACTIVE</span>
+<button class="text-outline hover:text-error transition-colors" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">17 Seater Force Grand Touring Coach</h3>
+<p class="font-body-sm text-[13px] text-outline mt-1 mb-4">Specially tailored for large pilgrimage groups, family weddings, and corporate interstate travel with reinforced roof carrier.</p>
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="text-[11px] font-label-sm bg-surface-subtle text-charcoal-accent px-2 py-0.5 rounded font-semibold">17 High Roof Seating</span>
+<span class="text-[11px] font-label-sm bg-surface-subtle text-charcoal-accent px-2 py-0.5 rounded font-semibold">Heavy Roof Luggage</span>
+<span class="text-[11px] font-label-sm bg-surface-subtle text-charcoal-accent px-2 py-0.5 rounded font-semibold">Microphone & PA</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-border-clean/60">
+<span class="text-[12px] font-label-md font-bold text-secondary">Ideal for Char Dham & Weddings</span>
+<button class="text-[12px] font-label-md font-semibold text-charcoal-accent hover:underline" onclick="openModal('modal-add-service')">Edit Service</button>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="bg-surface-card rounded-xl shadow-sm p-5 flex flex-col justify-between service-card hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-start justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-surface-subtle text-charcoal-accent flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">badge</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-status-verified-bg text-status-verified">ACTIVE</span>
+<button class="text-outline hover:text-error transition-colors" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Certified Mountain Chauffeurs</h3>
+<p class="font-body-sm text-[13px] text-outline mt-1 mb-4">Decade-experienced high-altitude pilots with snow-chain mastery, extreme incline protocol, and courteous etiquette.</p>
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="text-[11px] font-label-sm bg-surface-subtle text-charcoal-accent px-2 py-0.5 rounded font-semibold">Snow Chain Clearance</span>
+<span class="text-[11px] font-label-sm bg-surface-subtle text-charcoal-accent px-2 py-0.5 rounded font-semibold">Zero Alcohol Audited</span>
+<span class="text-[11px] font-label-sm bg-surface-subtle text-charcoal-accent px-2 py-0.5 rounded font-semibold">24/7 Mountain Backup</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-border-clean/60">
+<span class="text-[12px] font-label-md font-bold text-secondary">Standard on all Budhram Charters</span>
+<button class="text-[12px] font-label-md font-semibold text-charcoal-accent hover:underline" onclick="openModal('modal-add-service')">Edit Service</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: PACKAGES & CIRCUITS -->
+<div class="cms-section hidden flex flex-col gap-space-lg" id="section-packages-and-circuits">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-charcoal-accent">Tours & Circuits Management</h2>
+<p class="font-body-md text-body-md text-outline mt-1">Curate featured routes: Atal Tunnel, Kasol, Spiti Valley, and Rajasthan Heritage.</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-charcoal-accent text-on-primary font-label-md text-label-md font-semibold hover:bg-slate-800 transition-all shadow-sm" onclick="openModal('modal-add-package')">
+<span class="material-symbols-outlined text-[18px]">add_location_alt</span>
+<span>Add New Circuit</span>
+</button>
+</div>
+</div>
+<!-- Filters and Search Toolbar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-3 p-3 bg-surface-card rounded-xl shadow-sm">
+<div class="flex items-center gap-2 w-full sm:w-auto">
+<button class="circuit-filter-btn px-3 py-1.5 rounded-lg text-label-sm font-label-sm font-bold bg-charcoal-accent text-on-primary" onclick="filterPackages('all', this)">All (5)</button>
+<button class="circuit-filter-btn px-3 py-1.5 rounded-lg text-label-sm font-label-sm font-semibold bg-surface-subtle text-charcoal-accent hover:bg-slate-200" onclick="filterPackages('himalayan', this)">Himalayan Circuits</button>
+<button class="circuit-filter-btn px-3 py-1.5 rounded-lg text-label-sm font-label-sm font-semibold bg-surface-subtle text-charcoal-accent hover:bg-slate-200" onclick="filterPackages('heritage', this)">Heritage & Pilgrimage</button>
+</div>
+<div class="relative w-full sm:w-64">
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-outline text-[16px]">search</span>
+<input class="w-full pl-8 pr-3 py-1.5 text-body-sm rounded-lg bg-surface-canvas border border-border-clean focus:outline-none focus:ring-1 focus:ring-charcoal-accent" id="circuitSearchInput" onkeyup="searchPackages()" placeholder="Search circuit name..." type="text"/>
+</div>
+</div>
+<!-- Circuits List Table -->
+<div class="bg-surface-card rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left" id="packagesTable">
+<thead>
+<tr class="text-[11px] font-label-sm uppercase text-outline bg-surface-canvas border-b border-border-clean">
+<th class="py-3 px-4 font-bold">Circuit Name & Focus</th>
+<th class="py-3 px-4 font-bold">Category</th>
+<th class="py-3 px-4 font-bold">Starting Hub</th>
+<th class="py-3 px-4 font-bold">Duration</th>
+<th class="py-3 px-4 font-bold">Billing Model</th>
+<th class="py-3 px-4 font-bold">Featured Home</th>
+<th class="py-3 pr-4 text-right font-bold">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-clean/60 font-body-sm" id="circuitRows">
+<tr class="package-row hover:bg-surface-canvas transition-colors" data-type="himalayan">
+<td class="py-4 px-4">
+<div class="font-label-lg font-bold text-charcoal-accent package-name">Atal Tunnel & Sissu High Valley</div>
+<div class="text-[12px] text-outline">Manali Gateway • Altitude 10,040 Ft • Snow pass transit</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded text-[11px] font-label-sm font-bold bg-surface-container text-primary">Himalayan</span>
+</td>
+<td class="py-4 px-4 font-medium">Delhi NCR / Chandigarh</td>
+<td class="py-4 px-4 font-medium">5 Nights / 6 Days</td>
+<td class="py-4 px-4 font-mono text-[12px] font-semibold text-secondary">Honest KM + Hill Slab</td>
+<td class="py-4 px-4">
+<input checked="" class="w-4 h-4 rounded text-charcoal-accent" onchange="showToast('Homepage Sync', 'Circuit featured state updated')" type="checkbox"/>
+</td>
+<td class="py-4 pr-4 text-right">
+<button class="font-label-md text-label-md font-semibold text-charcoal-accent hover:underline" onclick="openModal('modal-add-package')">Edit</button>
+</td>
+</tr>
+<tr class="package-row hover:bg-surface-canvas transition-colors" data-type="himalayan">
+<td class="py-4 px-4">
+<div class="font-label-lg font-bold text-charcoal-accent package-name">Kasol, Manikaran & Jibhi Tirthan</div>
+<div class="text-[12px] text-outline">Parvati Valley alpine river trail, hot sulphur springs</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded text-[11px] font-label-sm font-bold bg-surface-container text-primary">Himalayan</span>
+</td>
+<td class="py-4 px-4 font-medium">Delhi NCR</td>
+<td class="py-4 px-4 font-medium">4 Nights / 5 Days</td>
+<td class="py-4 px-4 font-mono text-[12px] font-semibold text-secondary">Honest KM Meter</td>
+<td class="py-4 px-4">
+<input checked="" class="w-4 h-4 rounded text-charcoal-accent" onchange="showToast('Homepage Sync', 'Circuit featured state updated')" type="checkbox"/>
+</td>
+<td class="py-4 pr-4 text-right">
+<button class="font-label-md text-label-md font-semibold text-charcoal-accent hover:underline" onclick="openModal('modal-add-package')">Edit</button>
+</td>
+</tr>
+<tr class="package-row hover:bg-surface-canvas transition-colors" data-type="himalayan">
+<td class="py-4 px-4">
+<div class="font-label-lg font-bold text-charcoal-accent package-name">Dharamshala & Spiti Valley Expedition</div>
+<div class="text-[12px] text-outline">Alt. 14,930 Ft Kunzum Pass, ancient Kaza monasteries</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded text-[11px] font-label-sm font-bold bg-surface-container text-primary">Himalayan</span>
+</td>
+<td class="py-4 px-4 font-medium">Delhi NCR / Shimla</td>
+<td class="py-4 px-4 font-medium">8 Nights / 9 Days</td>
+<td class="py-4 px-4 font-mono text-[12px] font-semibold text-secondary">Extreme Terrain Tier</td>
+<td class="py-4 px-4">
+<input checked="" class="w-4 h-4 rounded text-charcoal-accent" onchange="showToast('Homepage Sync', 'Circuit featured state updated')" type="checkbox"/>
+</td>
+<td class="py-4 pr-4 text-right">
+<button class="font-label-md text-label-md font-semibold text-charcoal-accent hover:underline" onclick="openModal('modal-add-package')">Edit</button>
+</td>
+</tr>
+<tr class="package-row hover:bg-surface-canvas transition-colors" data-type="heritage">
+<td class="py-4 px-4">
+<div class="font-label-lg font-bold text-charcoal-accent package-name">Rajasthan Heritage & Golden Triangle</div>
+<div class="text-[12px] text-outline">Jaipur, Jodhpur, Udaipur palace corridors & Agra Fort</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded text-[11px] font-label-sm font-bold bg-gold-subtle text-secondary">Heritage</span>
+</td>
+<td class="py-4 px-4 font-medium">Delhi NCR</td>
+<td class="py-4 px-4 font-medium">7 Nights / 8 Days</td>
+<td class="py-4 px-4 font-mono text-[12px] font-semibold text-secondary">Flat Interstate Rate</td>
+<td class="py-4 px-4">
+<input checked="" class="w-4 h-4 rounded text-charcoal-accent" onchange="showToast('Homepage Sync', 'Circuit featured state updated')" type="checkbox"/>
+</td>
+<td class="py-4 pr-4 text-right">
+<button class="font-label-md text-label-md font-semibold text-charcoal-accent hover:underline" onclick="openModal('modal-add-package')">Edit</button>
+</td>
+</tr>
+<tr class="package-row hover:bg-surface-canvas transition-colors" data-type="heritage">
+<td class="py-4 px-4">
+<div class="font-label-lg font-bold text-charcoal-accent package-name">Char Dham & Uttarakhand Pilgrimage</div>
+<div class="text-[12px] text-outline">Haridwar, Rishikesh, Badrinath & Kedarnath gateway</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded text-[11px] font-label-sm font-bold bg-gold-subtle text-secondary">Pilgrimage</span>
+</td>
+<td class="py-4 px-4 font-medium">Delhi NCR / Haridwar</td>
+<td class="py-4 px-4 font-medium">10 Nights / 11 Days</td>
+<td class="py-4 px-4 font-mono text-[12px] font-semibold text-secondary">Pilgrimage All-Inclusive</td>
+<td class="py-4 px-4">
+<input class="w-4 h-4 rounded text-charcoal-accent" onchange="showToast('Homepage Sync', 'Circuit featured state updated')" type="checkbox"/>
+</td>
+<td class="py-4 pr-4 text-right">
+<button class="font-label-md text-label-md font-semibold text-charcoal-accent hover:underline" onclick="openModal('modal-add-package')">Edit</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- SECTION 5: BOOKINGS & ENQUIRIES -->
+<div class="cms-section hidden flex flex-col gap-space-lg" id="section-enquiries-and-bookings">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-charcoal-accent">Trip Enquiries & Bookings Manifest</h2>
+<p class="font-body-md text-body-md text-outline mt-1">Manage quote requests, direct calls, and WhatsApp charter inquiries.</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-card text-charcoal-accent font-label-md text-label-md font-semibold shadow-sm hover:bg-surface-subtle transition-all" onclick="showToast('Data Exported', 'CSV generated for accounting reconciliation.')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+<!-- Enquiry Tabs & Status Filters -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-3 p-3 bg-surface-card rounded-xl shadow-sm">
+<div class="flex items-center gap-2 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0">
+<button class="enquiry-filter-btn px-3 py-1.5 rounded-lg text-label-sm font-label-sm font-bold bg-charcoal-accent text-on-primary" onclick="filterEnquiries('all', this)">All (148)</button>
+<button class="enquiry-filter-btn px-3 py-1.5 rounded-lg text-label-sm font-label-sm font-semibold bg-surface-subtle text-secondary hover:bg-slate-200" onclick="filterEnquiries('new', this)">New Leads (14)</button>
+<button class="enquiry-filter-btn px-3 py-1.5 rounded-lg text-label-sm font-label-sm font-semibold bg-surface-subtle text-charcoal-accent hover:bg-slate-200" onclick="filterEnquiries('confirmed', this)">Confirmed (72)</button>
+<button class="enquiry-filter-btn px-3 py-1.5 rounded-lg text-label-sm font-label-sm font-semibold bg-surface-subtle text-charcoal-accent hover:bg-slate-200" onclick="filterEnquiries('completed', this)">Completed (24)</button>
+</div>
+<div class="relative w-full sm:w-64">
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-outline text-[16px]">search</span>
+<input class="w-full pl-8 pr-3 py-1.5 text-body-sm rounded-lg bg-surface-canvas border border-border-clean" id="enquirySearchInput" onkeyup="searchEnquiries()" placeholder="Search guest name / phone..." type="text"/>
+</div>
+</div>
+<!-- Dense Data Table for Enquiries -->
+<div class="bg-surface-card rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left" id="enquiriesTable">
+<thead>
+<tr class="text-[11px] font-label-sm uppercase text-outline bg-surface-canvas border-b border-border-clean">
+<th class="py-3 px-4 font-bold">Client / Contact</th>
+<th class="py-3 px-4 font-bold">Route Requested</th>
+<th class="py-3 px-4 font-bold">Vehicle</th>
+<th class="py-3 px-4 font-bold">Pax</th>
+<th class="py-3 px-4 font-bold">Travel Date</th>
+<th class="py-3 px-4 font-bold">Status</th>
+<th class="py-3 pr-4 text-right font-bold">Direct Dispatch</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-clean/60 font-body-sm" id="enquiryRows">
+<!-- Row 1 -->
+<tr class="enquiry-row hover:bg-surface-canvas transition-colors" data-status="new">
+<td class="py-3.5 px-4">
+<div class="font-label-lg font-bold text-charcoal-accent enquiry-name">Suresh Kumar</div>
+<div class="text-[12px] text-outline font-mono">+91 98112-44120</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-semibold text-charcoal-accent">Delhi to Atal Tunnel, Sissu</span>
+<span class="block text-[11px] text-outline">Family vacation, luggage space needed</span>
+</td>
+<td class="py-3.5 px-4 font-medium text-charcoal-accent">12S Pushback</td>
+<td class="py-3.5 px-4 font-bold text-charcoal-accent">8 Pax</td>
+<td class="py-3.5 px-4 text-outline font-mono text-[12px]">18 Nov 2024</td>
+<td class="py-3.5 px-4">
+<select class="status-select text-[11px] font-label-sm font-bold bg-gold-subtle text-secondary px-2 py-1 rounded border-none focus:ring-1 focus:ring-secondary" onchange="updateRowStatus(this)">
+<option selected="" value="new">New Lead</option>
+<option value="contacted">Contacted</option>
+<option value="confirmed">Confirmed</option>
+<option value="completed">Completed</option>
+</select>
+</td>
+<td class="py-3.5 pr-4 text-right">
+<a class="inline-flex items-center gap-1 text-[11px] font-label-sm font-bold bg-status-verified text-on-primary px-2.5 py-1.5 rounded-lg hover:bg-emerald-700 transition-colors" href="https://wa.me/919310847853?text=Namaste%20Suresh%20ji,%20Budhram%20Tour%20and%20Travels%20is%20ready%20with%20your%20Manali%20quote." target="_blank">
+<span class="material-symbols-outlined text-[15px]">send</span> WhatsApp
+                </a>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="enquiry-row hover:bg-surface-canvas transition-colors" data-status="confirmed">
+<td class="py-3.5 px-4">
+<div class="font-label-lg font-bold text-charcoal-accent enquiry-name">Rohit Goyal</div>
+<div class="text-[12px] text-outline font-mono">+91 98721-39918</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-semibold text-charcoal-accent">Kasol, Manikaran & Jibhi</span>
+<span class="block text-[11px] text-outline">Friends group, pickup Gurgaon CyberHub</span>
+</td>
+<td class="py-3.5 px-4 font-medium text-charcoal-accent">17S Luxury Coach</td>
+<td class="py-3.5 px-4 font-bold text-charcoal-accent">14 Pax</td>
+<td class="py-3.5 px-4 text-outline font-mono text-[12px]">24 Nov 2024</td>
+<td class="py-3.5 px-4">
+<select class="status-select text-[11px] font-label-sm font-bold bg-status-verified-bg text-status-verified px-2 py-1 rounded border-none focus:ring-1" onchange="updateRowStatus(this)">
+<option value="new">New Lead</option>
+<option value="contacted">Contacted</option>
+<option selected="" value="confirmed">Confirmed</option>
+<option value="completed">Completed</option>
+</select>
+</td>
+<td class="py-3.5 pr-4 text-right">
+<button class="inline-flex items-center gap-1 text-[11px] font-label-sm font-bold bg-surface-subtle text-charcoal-accent px-2.5 py-1.5 rounded-lg hover:bg-slate-200" onclick="showLeadDetails('Rohit Goyal', '+91 98721-39918', 'Kasol Circuit', '17S Coach', 'Advance ₹15,000 received. Chauffeur assigned: Devendra Singh.')">
+                  Trip Sheet
+                </button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="enquiry-row hover:bg-surface-canvas transition-colors" data-status="confirmed">
+<td class="py-3.5 px-4">
+<div class="font-label-lg font-bold text-charcoal-accent enquiry-name">Vikas Sharma</div>
+<div class="text-[12px] text-outline font-mono">+91 94140-52219</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-semibold text-charcoal-accent">Jaipur, Pushkar & Udaipur</span>
+<span class="block text-[11px] text-outline">NRI guests, dual AC non-stop cooling req.</span>
+</td>
+<td class="py-3.5 px-4 font-medium text-charcoal-accent">Executive Cruiser</td>
+<td class="py-3.5 px-4 font-bold text-charcoal-accent">9 Pax</td>
+<td class="py-3.5 px-4 text-outline font-mono text-[12px]">02 Dec 2024</td>
+<td class="py-3.5 px-4">
+<select class="status-select text-[11px] font-label-sm font-bold bg-status-verified-bg text-status-verified px-2 py-1 rounded border-none focus:ring-1" onchange="updateRowStatus(this)">
+<option value="new">New Lead</option>
+<option value="contacted">Contacted</option>
+<option selected="" value="confirmed">Confirmed</option>
+<option value="completed">Completed</option>
+</select>
+</td>
+<td class="py-3.5 pr-4 text-right">
+<a class="inline-flex items-center gap-1 text-[11px] font-label-sm font-bold bg-status-verified text-on-primary px-2.5 py-1.5 rounded-lg hover:bg-emerald-700" href="https://wa.me/919310847853?text=Namaste%20Vikas%20ji,%20your%20Rajasthan%20itinerary%20is%20ready." target="_blank">
+<span class="material-symbols-outlined text-[15px]">send</span> WhatsApp
+                </a>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="enquiry-row hover:bg-surface-canvas transition-colors" data-status="new">
+<td class="py-3.5 px-4">
+<div class="font-label-lg font-bold text-charcoal-accent enquiry-name">Ananya Sen</div>
+<div class="text-[12px] text-outline font-mono">+91 98302-88194</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-semibold text-charcoal-accent">Dharamshala, McLeod & Spiti</span>
+<span class="block text-[11px] text-outline">Extreme winter trek group, snow tyres required</span>
+</td>
+<td class="py-3.5 px-4 font-medium text-charcoal-accent">12S Mountain Spec</td>
+<td class="py-3.5 px-4 font-bold text-charcoal-accent">10 Pax</td>
+<td class="py-3.5 px-4 text-outline font-mono text-[12px]">12 Dec 2024</td>
+<td class="py-3.5 px-4">
+<select class="status-select text-[11px] font-label-sm font-bold bg-gold-subtle text-secondary px-2 py-1 rounded border-none focus:ring-1 focus:ring-secondary" onchange="updateRowStatus(this)">
+<option selected="" value="new">New Lead</option>
+<option value="contacted">Contacted</option>
+<option value="confirmed">Confirmed</option>
+<option value="completed">Completed</option>
+</select>
+</td>
+<td class="py-3.5 pr-4 text-right">
+<a class="inline-flex items-center gap-1 text-[11px] font-label-sm font-bold bg-status-verified text-on-primary px-2.5 py-1.5 rounded-lg hover:bg-emerald-700" href="https://wa.me/919310847853?text=Namaste%20Ananya%20ji,%20Budhram%20Tour%20and%20Travels%20confirming%20snow%20chain%20clearance." target="_blank">
+<span class="material-symbols-outlined text-[15px]">send</span> WhatsApp
+                </a>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="enquiry-row hover:bg-surface-canvas transition-colors" data-status="completed">
+<td class="py-3.5 px-4">
+<div class="font-label-lg font-bold text-charcoal-accent enquiry-name">Amitabh Saxena</div>
+<div class="text-[12px] text-outline font-mono">+91 99100-11234</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-semibold text-charcoal-accent">Delhi to Agra & Mathura One Day</span>
+<span class="block text-[11px] text-outline">Completed without odometer discrepancy</span>
+</td>
+<td class="py-3.5 px-4 font-medium text-charcoal-accent">12S Pushback</td>
+<td class="py-3.5 px-4 font-bold text-charcoal-accent">6 Pax</td>
+<td class="py-3.5 px-4 text-outline font-mono text-[12px]">01 Nov 2024</td>
+<td class="py-3.5 px-4">
+<select class="status-select text-[11px] font-label-sm font-bold bg-surface-subtle text-charcoal-accent px-2 py-1 rounded border-none" onchange="updateRowStatus(this)">
+<option value="new">New Lead</option>
+<option value="contacted">Contacted</option>
+<option value="confirmed">Confirmed</option>
+<option selected="" value="completed">Completed</option>
+</select>
+</td>
+<td class="py-3.5 pr-4 text-right">
+<span class="text-[11px] font-label-sm text-status-verified font-bold">Billed & Closed</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- SECTION 6: MEDIA GALLERY -->
+<div class="cms-section hidden flex flex-col gap-space-lg" id="section-media-gallery">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-charcoal-accent">Fleet & Circuit Media Assets</h2>
+<p class="font-body-md text-body-md text-outline mt-1">High-definition photography of luxury interiors, Pushback cabins, and Himalayan transits.</p>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-charcoal-accent text-on-primary font-label-md text-label-md font-semibold hover:bg-slate-800 transition-all shadow-sm" onclick="openModal('modal-upload-media')">
+<span class="material-symbols-outlined text-[18px]">cloud_upload</span>
+<span>Upload Fleet Media</span>
+</button>
+</div>
+<!-- Media Filter Tags -->
+<div class="flex items-center gap-2 p-2 bg-surface-card rounded-xl shadow-sm overflow-x-auto">
+<button class="media-filter-btn px-3 py-1.5 rounded-lg text-label-sm font-label-sm font-bold bg-charcoal-accent text-on-primary" onclick="filterMedia('all', this)">All Photos (6)</button>
+<button class="media-filter-btn px-3 py-1.5 rounded-lg text-label-sm font-label-sm font-semibold bg-surface-subtle text-charcoal-accent hover:bg-slate-200" onclick="filterMedia('fleet', this)">Fleet Exterior</button>
+<button class="media-filter-btn px-3 py-1.5 rounded-lg text-label-sm font-label-sm font-semibold bg-surface-subtle text-charcoal-accent hover:bg-slate-200" onclick="filterMedia('cabins', this)">Luxury Cabins</button>
+<button class="media-filter-btn px-3 py-1.5 rounded-lg text-label-sm font-label-sm font-semibold bg-surface-subtle text-charcoal-accent hover:bg-slate-200" onclick="filterMedia('himalayas', this)">Himalayan Routes</button>
+</div>
+<!-- Media Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-space-md" id="mediaGalleryGrid">
+<!-- Image 1 -->
+<div class="media-card bg-surface-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow" data-category="fleet">
+<div class="relative h-48 bg-charcoal-accent">
+<img class="w-full h-full object-cover" data-alt="A sleek dark metallic luxury Force Tempo Traveller parked against the golden sandstone of a heritage palace hotel in Rajasthan at sunset, warm cinematic lighting, high-end commercial vehicle photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfjT6ECRjtvCh89gumCHh6rlzZn-aOb3t-Lqv_82QUAxVN0BdVkuw00nltu9dn-PRbVaOBpL-v6zoTI-M_1v9iTwwrSK5B_8k54_7ehql487PwNqJpJSUcQ0LUPqvLSvQ-Ss780Cr3AShZxXE8dRWYilHtUE_g6dVEP9jFXLbXHY5WNwfAurSdYCnlKAlJ4RTnAAULAxgfPDKmzYax7p3Rvg1Pa6OylXcjAs_KZtiVZlCWJOKTZ77y"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-charcoal-accent/80 text-on-primary">Fleet Exterior</span>
+</div>
+<div class="p-3.5 flex items-center justify-between">
+<div>
+<span class="font-label-md font-bold text-charcoal-accent block">Executive Cruiser Exterior</span>
+<span class="text-[11px] text-outline font-mono">1920x1080 • JPG</span>
+</div>
+<button class="text-outline hover:text-error" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<!-- Image 2 -->
+<div class="media-card bg-surface-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow" data-category="cabins">
+<div class="relative h-48 bg-charcoal-accent">
+<img class="w-full h-full object-cover" data-alt="Interior luxury view of a Maharaja Force Traveller showing cream leatherette pushback recliners, warm ambient LED reading lights, wooden acoustic flooring and individual USB charging docks in immaculate corporate luxury condition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChY_zJtPWz0dbOIf_bq104kNfRofdT_r7Snar0VZ0v51o3gGBUUSWN47dZwxCzL1NBUZUUzW6-thPMyww31RU0i9SSA-TfYu5BHPcTJC3OcohFm2YVAYKZwKzS1gY3l2R2AWZIfiI7yKW1aVvxzXw04AdkQUxSIP-cezJhEeT6Jeb7kPYjyefSuKBZv62jSgSYMlYFUXVloNFrixHNcQ7rknM9VyFh1j8w6rpJG14GvupDrz9JVQ3x"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-charcoal-accent/80 text-on-primary">Luxury Cabin</span>
+</div>
+<div class="p-3.5 flex items-center justify-between">
+<div>
+<span class="font-label-md font-bold text-charcoal-accent block">Pushback Recliner Suite</span>
+<span class="text-[11px] text-outline font-mono">Interior • Ambient Warmth</span>
+</div>
+<button class="text-outline hover:text-error" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<!-- Image 3 -->
+<div class="media-card bg-surface-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow" data-category="himalayas">
+<div class="relative h-48 bg-charcoal-accent">
+<img class="w-full h-full object-cover" data-alt="A pristine luxury Force Traveller cruiser passing through the snow walls near Atal Tunnel Sissu with crisp blue skies and dramatic Himalayan snow peaks reflecting on the vehicle windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzG3KNzh3eiV3I8yLQ5f65c8SzPCxhDFe93aRaR7KL2Qq36mJcLsyF3WEf_E7U6mR4X3aey0jzBfu8CaZX98Pdgp7FLDoY0iXcaS6lsojLeyId6NIWMPVhKMtXZ1tt_a9FW-Nf1JsBPyxawYx9qW17ClU9bQsU6xdDOf3o-CSg2JssFkTRid5nrsb6REXxVPFEk10a-y_fakL1WbsGDfGO-VFXEWpDI0A8MqQp-JtQqWCD18HzeMfK"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-charcoal-accent/80 text-on-primary">Himalayan Routes</span>
+</div>
+<div class="p-3.5 flex items-center justify-between">
+<div>
+<span class="font-label-md font-bold text-charcoal-accent block">Atal Tunnel Snow Crossing</span>
+<span class="text-[11px] text-outline font-mono">Altitude 10,040 Ft</span>
+</div>
+<button class="text-outline hover:text-error" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<!-- Image 4 -->
+<div class="media-card bg-surface-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow" data-category="cabins">
+<div class="relative h-48 bg-charcoal-accent">
+<img class="w-full h-full object-cover" data-alt="Close up view of the chauffeur dashboard console inside an executive Force Traveller with GPS navigation screen, mahogany trim, and sanitized luxury steering controls." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3y4LkhJrriLVMLvbEJ1ttsIaWmCjce4mqFB4kSV00zqe6gPABPn69ZuhDhsZDEm2xHmltDjFCYas7caOFA75ac56s8zTL6Dx5weNIMhaUvob8oEEdqemEVrlEFLW5ToyA6CF24U3-WnIT4rI_Obyk3Ls1ZL_lL8IdiZE-5ELhTWHTDJwE-Wh_7RDzgtu6l7R-a83I8EXSwZtXWmFUgfYJJxLeSD5zTKI53w--n9rN6V8201dGbIet"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-charcoal-accent/80 text-on-primary">Cockpit</span>
+</div>
+<div class="p-3.5 flex items-center justify-between">
+<div>
+<span class="font-label-md font-bold text-charcoal-accent block">Chauffeur Dashboard & GPS</span>
+<span class="text-[11px] text-outline font-mono">Mahogany Finish</span>
+</div>
+<button class="text-outline hover:text-error" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<!-- Image 5 -->
+<div class="media-card bg-surface-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow" data-category="himalayas">
+<div class="relative h-48 bg-charcoal-accent">
+<img class="w-full h-full object-cover" data-alt="Bespoke luxury tempo traveller halted beside the roaring crystal teal waters of Parvati River in Kasol surrounded by towering green deodar and pine trees in morning mist." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRy1_EthtAfy8QCu48cAPbPNUCQAE8SBpBLXxHlvyOGIQRcddYNaDj2irKQiNiKxOTjoP0AJfQRECG1k3kyMPwMhd3QM6ntRycFsw4LxzzA6xaP2h82wMcNWCTwNDqxthAaCPQLtnq8m8vYJ4fA_p2sIbuD8kJtzukCdtUpIZOQPK0slqyYTnI8kyfyyVD3aSz-sBNDbiD4v9eAcfzBm5H5U0h0JZ5ldHTXwjeOdfzxBn9xgn6Ypk6"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-charcoal-accent/80 text-on-primary">Himalayan Routes</span>
+</div>
+<div class="p-3.5 flex items-center justify-between">
+<div>
+<span class="font-label-md font-bold text-charcoal-accent block">Kasol & Parvati River Halt</span>
+<span class="text-[11px] text-outline font-mono">Alpine River Circuit</span>
+</div>
+<button class="text-outline hover:text-error" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<!-- Image 6 -->
+<div class="media-card bg-surface-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow" data-category="fleet">
+<div class="relative h-48 bg-charcoal-accent">
+<img class="w-full h-full object-cover" data-alt="Side profile of 17 Seater Force Grand Touring coach parked at Delhi Aerocity executive terminal with uniformed driver greeting business executives in sharp executive morning daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeHakxfxGRbigsSn7kQ4zwNvGi31rE5Jh1KsHOk3jdE3IgwlxEuKf21eHwxLeFHdnAKGrDcLcSN68s0mgCy1DMRs9Su9SQRlG8Svf81cEyMPnLBCKZlOZewj7_9HYsZbz51iC0Uo5VdhAWoDNTMf4NbjFQ4fh3hAGppQt-uhQRcPCRIkGhB1ptxBsPZWldvHJdmQT_-1NNPBcFERXsvTVUBvMtyX0UpLLw0cR9ROa7ji2yNJ9GG438"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-charcoal-accent/80 text-on-primary">Fleet Exterior</span>
+</div>
+<div class="p-3.5 flex items-center justify-between">
+<div>
+<span class="font-label-md font-bold text-charcoal-accent block">17 Seater Grand Coach</span>
+<span class="text-[11px] text-outline font-mono">Aerocity Dispatch</span>
+</div>
+<button class="text-outline hover:text-error" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 7: TESTIMONIALS -->
+<div class="cms-section hidden flex flex-col gap-space-lg" id="section-testimonials">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-charcoal-accent">Customer Testimonials & Reviews</h2>
+<p class="font-body-md text-body-md text-outline mt-1">Review and feature real traveler feedback shown on budhramtravels.com.</p>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-charcoal-accent text-on-primary font-label-md text-label-md font-semibold hover:bg-slate-800 transition-all shadow-sm" onclick="openModal('modal-add-testimonial')">
+<span class="material-symbols-outlined text-[18px]">rate_review</span>
+<span>Add Verified Review</span>
+</button>
+</div>
+<!-- Testimonials Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md" id="testimonialsGrid">
+<!-- Review 1 -->
+<div class="bg-surface-card rounded-xl p-5 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1 text-gold-light">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[12px] font-bold text-charcoal-accent ml-1">5.0</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-status-verified-bg text-status-verified">FEATURED ON HOME</span>
+</div>
+<p class="font-body-sm text-[13px] text-charcoal-accent italic mb-4">"Pushback recline seats gave my elderly parents total relaxation during our 6-day Delhi to Manali trip. The Force traveller didn't wobble on high hairpin bends, and Chauffeur Mohan was exceptional."</p>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-border-clean/60">
+<div>
+<span class="font-label-md font-bold text-charcoal-accent block">Suresh Kumar & Family</span>
+<span class="text-[11px] text-outline">Delhi NCR to Manali & Atal Tunnel</span>
+</div>
+<button class="text-outline hover:text-error" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-card rounded-xl p-5 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1 text-gold-light">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[12px] font-bold text-charcoal-accent ml-1">5.0</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-status-verified-bg text-status-verified">FEATURED ON HOME</span>
+</div>
+<p class="font-body-sm text-[13px] text-charcoal-accent italic mb-4">"Distance and KM-based billing is completely truthful. We took the 17 Seater to Kasol with college alumni. Zero hidden tolls, zero unnecessary meter inflation. Budhram Travels sets the benchmark."</p>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-border-clean/60">
+<div>
+<span class="font-label-md font-bold text-charcoal-accent block">Rohit Goyal</span>
+<span class="text-[11px] text-outline">Chandigarh to Kasol & Jibhi</span>
+</div>
+<button class="text-outline hover:text-error" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-card rounded-xl p-5 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1 text-gold-light">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[12px] font-bold text-charcoal-accent ml-1">5.0</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-status-verified-bg text-status-verified">FEATURED ON HOME</span>
+</div>
+<p class="font-body-sm text-[13px] text-charcoal-accent italic mb-4">"Dual AC kept the cabin wonderfully chilled through our 40-degree Rajasthan transit. Chauffeur Rajesh drove like an absolute gentleman, knowledgeable about every palace gate."</p>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-border-clean/60">
+<div>
+<span class="font-label-md font-bold text-charcoal-accent block">Vikas Sharma</span>
+<span class="text-[11px] text-outline">Delhi to Jaipur & Udaipur Circuit</span>
+</div>
+<button class="text-outline hover:text-error" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<!-- Review 4 -->
+<div class="bg-surface-card rounded-xl p-5 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1 text-gold-light">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[12px] font-bold text-charcoal-accent ml-1">5.0</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-surface-subtle text-charcoal-accent">PUBLISHED</span>
+</div>
+<p class="font-body-sm text-[13px] text-charcoal-accent italic mb-4">"Courteous mountain driver, perfectly handled snow-covered roads leading up into Dharamshala and Spiti. Cleanest cabin we have ever traveled in."</p>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-border-clean/60">
+<div>
+<span class="font-label-md font-bold text-charcoal-accent block">Ananya Sen</span>
+<span class="text-[11px] text-outline">Dharamshala & Spiti High Pass</span>
+</div>
+<button class="text-outline hover:text-error" onclick="deleteCard(this)"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 8: CONTACT & BUSINESS INFO -->
+<div class="cms-section hidden flex flex-col gap-space-lg" id="section-contact-and-business-info">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-charcoal-accent">Contact & Business Infrastructure</h2>
+<p class="font-body-md text-body-md text-outline mt-1">Configure company dispatch telephone numbers, WhatsApp routing, and head office coordinates.</p>
+</div>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-charcoal-accent text-on-primary font-label-md text-label-md font-semibold hover:bg-slate-800 transition-all shadow-sm" onclick="showToast('Business Info Updated', 'Header phone and footer WhatsApp links refreshed globally.')">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save & Propagate</span>
+</button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 bg-surface-card rounded-xl p-6 shadow-sm flex flex-col gap-5">
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent border-b border-border-clean/60 pb-3">Public Contact Parameters</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Company Legal Name</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-semibold focus:outline-none focus:ring-1 focus:ring-charcoal-accent" type="text" value="Budhram Tour And Travels"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Primary Calling Number</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-mono font-semibold focus:outline-none focus:ring-1 focus:ring-charcoal-accent" type="text" value="+91 9310847853"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">WhatsApp Dispatch Lead Line</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-mono font-semibold focus:outline-none focus:ring-1 focus:ring-charcoal-accent" type="text" value="+91 9310847853"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Official Operations Email</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-medium focus:outline-none focus:ring-1 focus:ring-charcoal-accent" type="email" value="Deepanshuprajapati520@gmail.com"/>
+</div>
+<div class="sm:col-span-2 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Base Hub Head Office Address</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-medium focus:outline-none focus:ring-1 focus:ring-charcoal-accent" type="text" value="Delhi NCR • Serving Trips All Across India"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Desk Availability Hours</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-medium focus:outline-none focus:ring-1 focus:ring-charcoal-accent" type="text" value="24 Hours / 7 Days Desk Dispatch"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Google Business Maps URL</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent text-[12px] font-mono focus:outline-none" type="text" value="https://maps.google.com/?cid=budhramtravels"/>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-card rounded-xl p-5 shadow-sm">
+<h4 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent mb-2">Live Web Integrations</h4>
+<p class="font-body-sm text-[12px] text-outline mb-4">Every telephone & WhatsApp click on budhramtravels.com redirects directly to your registered super-admin terminal.</p>
+<div class="flex flex-col gap-2.5">
+<div class="p-3 rounded-lg bg-surface-subtle flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-charcoal-accent">Header Call CTA</span>
+<span class="text-[11px] font-label-sm font-bold text-status-verified">ENABLED</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-subtle flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-charcoal-accent">Floating WhatsApp</span>
+<span class="text-[11px] font-label-sm font-bold text-status-verified">ACTIVE (24/7)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 9: SEO SETTINGS -->
+<div class="cms-section hidden flex flex-col gap-space-lg" id="section-seo-settings">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-charcoal-accent">Search Engine Optimization (SEO)</h2>
+<p class="font-body-md text-body-md text-outline mt-1">Configure global meta tags, OpenGraph previews, and robots.txt indexation rules.</p>
+</div>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-charcoal-accent text-on-primary font-label-md text-label-md font-semibold hover:bg-slate-800 transition-all shadow-sm" onclick="showToast('SEO Settings Updated', 'Sitemap.xml rebuilt and submitted to search crawlers.')">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save SEO Config</span>
+</button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 bg-surface-card rounded-xl p-6 shadow-sm flex flex-col gap-5">
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent border-b border-border-clean/60 pb-3">Global Meta Tags</h3>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Global Meta Title (Max 60 chars)</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-semibold focus:outline-none focus:ring-1 focus:ring-charcoal-accent" type="text" value="Budhram Tour And Travels | Luxury Force Tempo Traveller Delhi NCR"/>
+<span class="text-[11px] text-outline">62 / 60 characters • Optimal search engine title</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Meta Description</label>
+<textarea class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-body-md focus:outline-none focus:ring-1 focus:ring-charcoal-accent" rows="3">Pan-India private charter fleet with transparent kilometre meter billing, pushback recliners, and mountain chauffeurs. Book 12-17 seater Force Tempo Travellers for Manali, Spiti & Rajasthan.</textarea>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Target Keywords (Comma Separated)</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent text-[13px] focus:outline-none" type="text" value="Force tempo traveller Delhi, luxury tempo traveller hire, Manali tempo traveller, Kasol 17 seater traveller, honest KM rate tempo traveller"/>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-card rounded-xl p-5 shadow-sm flex flex-col gap-3">
+<h4 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Crawler Health Status</h4>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle">
+<div>
+<span class="font-label-md font-bold text-charcoal-accent block">sitemap.xml</span>
+<span class="text-[11px] text-outline">6 Circuits • 4 Services</span>
+</div>
+<span class="text-[11px] font-label-sm font-bold text-status-verified bg-status-verified-bg px-2 py-0.5 rounded">VALID</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-subtle">
+<div>
+<span class="font-label-md font-bold text-charcoal-accent block">robots.txt</span>
+<span class="text-[11px] text-outline">Disallow: /admin</span>
+</div>
+<span class="text-[11px] font-label-sm font-bold text-status-verified bg-status-verified-bg px-2 py-0.5 rounded">INDEXING</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 10: ADMIN SETTINGS -->
+<div class="cms-section hidden flex flex-col gap-space-lg" id="section-admin-settings">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-charcoal-accent">Super Admin Account & Security</h2>
+<p class="font-body-md text-body-md text-outline mt-1">Manage master credentials for Deepanshu Prajapati and session privileges.</p>
+</div>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-charcoal-accent text-on-primary font-label-md text-label-md font-semibold hover:bg-slate-800 transition-all shadow-sm" onclick="showToast('Credentials Secured', 'Admin account settings updated.')">
+<span class="material-symbols-outlined text-[18px]">lock_reset</span>
+<span>Save Profile</span>
+</button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 bg-surface-card rounded-xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center gap-4 pb-4 border-b border-border-clean/60">
+<div class="w-16 h-16 rounded-full bg-charcoal-accent text-on-primary flex items-center justify-center font-bold text-2xl font-headline-lg">
+            DP
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Deepanshu Prajapati</h3>
+<span class="text-[12px] font-label-md font-bold text-secondary">Super-Admin & Sole Proprietor</span>
+<p class="text-[11px] text-outline font-mono mt-0.5">Deepanshuprajapati520@gmail.com</p>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Full Name</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-semibold focus:outline-none" type="text" value="Deepanshu Prajapati"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Admin Email Address</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent font-semibold focus:outline-none" type="email" value="Deepanshuprajapati520@gmail.com"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">New Master Password</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent focus:outline-none" type="password" value="••••••••••••••••"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase font-bold text-outline">Confirm Password</label>
+<input class="px-3.5 py-2 rounded-lg bg-surface-canvas border border-border-clean text-charcoal-accent focus:outline-none" type="password" value="••••••••••••••••"/>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-card rounded-xl p-5 shadow-sm flex flex-col gap-3">
+<h4 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Session Security Status</h4>
+<div class="p-3 rounded-lg bg-status-verified-bg text-status-verified flex items-center gap-2 text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Active SSL 256-Bit Session • Delhi NCR Central Hub</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-subtle text-charcoal-accent text-[12px] flex items-center justify-between">
+<span>2-Factor Phone Auth</span>
+<span class="font-bold text-status-verified">ENABLED</span>
+</div>
+<button class="mt-2 w-full py-2 rounded-lg bg-error-container text-on-error-container font-label-md font-bold text-[12px] hover:bg-red-200 transition-colors" onclick="showToast('Logged Out', 'Session terminated cleanly.')">
+            Terminate Session & Logout
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: ADD PACKAGE -->
+<div class="fixed inset-0 z-50 bg-charcoal-accent/60 backdrop-blur-xs hidden flex items-center justify-center p-4" id="modal-add-package">
+<div class="bg-surface-card w-full max-w-xl rounded-xl shadow-2xl p-6 flex flex-col gap-4">
+<div class="flex items-center justify-between border-b border-border-clean/60 pb-3">
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Add Tour / Circuit</h3>
+<button class="text-outline hover:text-charcoal-accent" onclick="closeModal('modal-add-package')"><span class="material-symbols-outlined">close</span></button>
+</div>
+<form class="flex flex-col gap-3 text-body-sm" id="formAddPackage" onsubmit="submitNewPackage(event)">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm uppercase font-bold text-outline">Circuit Name</label>
+<input class="px-3 py-2 rounded-lg bg-surface-canvas border border-border-clean focus:outline-none" id="newPkgName" placeholder="e.g. Kinnaur & Sangla Valley" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm uppercase font-bold text-outline">Category</label>
+<select class="px-3 py-2 rounded-lg bg-surface-canvas border border-border-clean focus:outline-none" id="newPkgCategory">
+<option value="himalayan">Himalayan Circuits</option>
+<option value="heritage">Heritage & Golden Triangle</option>
+<option value="pilgrimage">Pilgrimage & Char Dham</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm uppercase font-bold text-outline">Duration</label>
+<input class="px-3 py-2 rounded-lg bg-surface-canvas border border-border-clean focus:outline-none" id="newPkgDuration" placeholder="e.g. 5 Nights / 6 Days" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm uppercase font-bold text-outline">Starting Location</label>
+<input class="px-3 py-2 rounded-lg bg-surface-canvas border border-border-clean focus:outline-none" id="newPkgOrigin" type="text" value="Delhi NCR"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm uppercase font-bold text-outline">Billing Model</label>
+<input class="px-3 py-2 rounded-lg bg-surface-canvas border border-border-clean focus:outline-none" id="newPkgRate" type="text" value="Transparent KM Slab"/>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<input checked="" class="w-4 h-4 rounded text-charcoal-accent" id="newPkgFeatured" type="checkbox"/>
+<label class="font-label-md text-label-md text-charcoal-accent" for="newPkgFeatured">Feature prominently on Homepage</label>
+</div>
+<div class="flex items-center justify-end gap-2 pt-4 border-t border-border-clean/60">
+<button class="px-4 py-2 rounded-lg text-charcoal-accent font-semibold hover:bg-surface-subtle" onclick="closeModal('modal-add-package')" type="button">Cancel</button>
+<button class="px-4 py-2 rounded-lg bg-charcoal-accent text-on-primary font-semibold hover:bg-slate-800" type="submit">Save Circuit</button>
+</div>
+</form>
+</div>
+</div>
+<!-- MODAL: ADD SERVICE -->
+<div class="fixed inset-0 z-50 bg-charcoal-accent/60 backdrop-blur-xs hidden flex items-center justify-center p-4" id="modal-add-service">
+<div class="bg-surface-card w-full max-w-xl rounded-xl shadow-2xl p-6 flex flex-col gap-4">
+<div class="flex items-center justify-between border-b border-border-clean/60 pb-3">
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Add Fleet Service Offering</h3>
+<button class="text-outline hover:text-charcoal-accent" onclick="closeModal('modal-add-service')"><span class="material-symbols-outlined">close</span></button>
+</div>
+<form class="flex flex-col gap-3 text-body-sm" id="formAddService" onsubmit="submitNewService(event)">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm uppercase font-bold text-outline">Service Title</label>
+<input class="px-3 py-2 rounded-lg bg-surface-canvas border border-border-clean focus:outline-none" id="newServiceName" placeholder="e.g. 20 Seater Force Executive Super-Cruiser" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm uppercase font-bold text-outline">Description & Highlights</label>
+<textarea class="px-3 py-2 rounded-lg bg-surface-canvas border border-border-clean focus:outline-none" id="newServiceDesc" placeholder="Features dual high-cooling AC, extra luggage bay, USB recliners..." rows="3"></textarea>
+</div>
+<div class="flex items-center justify-end gap-2 pt-4 border-t border-border-clean/60">
+<button class="px-4 py-2 rounded-lg text-charcoal-accent font-semibold hover:bg-surface-subtle" onclick="closeModal('modal-add-service')" type="button">Cancel</button>
+<button class="px-4 py-2 rounded-lg bg-charcoal-accent text-on-primary font-semibold hover:bg-slate-800" type="submit">Publish Service</button>
+</div>
+</form>
+</div>
+</div>
+<!-- MODAL: UPLOAD MEDIA -->
+<div class="fixed inset-0 z-50 bg-charcoal-accent/60 backdrop-blur-xs hidden flex items-center justify-center p-4" id="modal-upload-media">
+<div class="bg-surface-card w-full max-w-lg rounded-xl shadow-2xl p-6 flex flex-col gap-4">
+<div class="flex items-center justify-between border-b border-border-clean/60 pb-3">
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Upload Fleet Media</h3>
+<button class="text-outline hover:text-charcoal-accent" onclick="closeModal('modal-upload-media')"><span class="material-symbols-outlined">close</span></button>
+</div>
+<div class="border-2 border-dashed border-border-clean rounded-xl p-8 flex flex-col items-center justify-center text-center bg-surface-canvas hover:bg-surface-subtle transition-colors cursor-pointer" onclick="document.getElementById('fileUploadInput').click()">
+<span class="material-symbols-outlined text-[40px] text-outline mb-2">cloud_upload</span>
+<span class="font-label-md font-bold text-charcoal-accent">Click to select files from device</span>
+<span class="text-[12px] text-outline mt-1">PNG, JPG, or WEBP up to 10MB</span>
+<input class="hidden" id="fileUploadInput" onchange="handleFileUpload()" type="file"/>
+</div>
+<div class="flex flex-col gap-1 text-body-sm">
+<label class="font-label-sm uppercase font-bold text-outline">Category Tag</label>
+<select class="px-3 py-2 rounded-lg bg-surface-canvas border border-border-clean focus:outline-none">
+<option>Fleet Exterior</option>
+<option>Luxury Cabins</option>
+<option>Himalayan Routes</option>
+</select>
+</div>
+<div class="flex items-center justify-end gap-2 pt-3 border-t border-border-clean/60">
+<button class="px-4 py-2 rounded-lg text-charcoal-accent font-semibold hover:bg-surface-subtle" onclick="closeModal('modal-upload-media')" type="button">Cancel</button>
+<button class="px-4 py-2 rounded-lg bg-charcoal-accent text-on-primary font-semibold hover:bg-slate-800" onclick="simulateMediaUpload()" type="button">Upload Asset</button>
+</div>
+</div>
+</div>
+<!-- MODAL: ADD TESTIMONIAL -->
+<div class="fixed inset-0 z-50 bg-charcoal-accent/60 backdrop-blur-xs hidden flex items-center justify-center p-4" id="modal-add-testimonial">
+<div class="bg-surface-card w-full max-w-lg rounded-xl shadow-2xl p-6 flex flex-col gap-4">
+<div class="flex items-center justify-between border-b border-border-clean/60 pb-3">
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Add Verified Traveler Review</h3>
+<button class="text-outline hover:text-charcoal-accent" onclick="closeModal('modal-add-testimonial')"><span class="material-symbols-outlined">close</span></button>
+</div>
+<form class="flex flex-col gap-3 text-body-sm" id="formAddTestimonial" onsubmit="submitNewTestimonial(event)">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm uppercase font-bold text-outline">Customer Name / Family</label>
+<input class="px-3 py-2 rounded-lg bg-surface-canvas border border-border-clean focus:outline-none" id="newRevAuthor" placeholder="e.g. Dr. Harish Batra & Group" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm uppercase font-bold text-outline">Tour Circuit Taken</label>
+<input class="px-3 py-2 rounded-lg bg-surface-canvas border border-border-clean focus:outline-none" id="newRevCircuit" placeholder="e.g. Delhi to Spiti Valley" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm uppercase font-bold text-outline">Review Text</label>
+<textarea class="px-3 py-2 rounded-lg bg-surface-canvas border border-border-clean focus:outline-none" id="newRevContent" placeholder="Describe their experience with Force recliners, punctuality, and drivers..." required="" rows="3"></textarea>
+</div>
+<div class="flex items-center justify-end gap-2 pt-3 border-t border-border-clean/60">
+<button class="px-4 py-2 rounded-lg text-charcoal-accent font-semibold hover:bg-surface-subtle" onclick="closeModal('modal-add-testimonial')" type="button">Cancel</button>
+<button class="px-4 py-2 rounded-lg bg-charcoal-accent text-on-primary font-semibold hover:bg-slate-800" type="submit">Publish Review</button>
+</div>
+</form>
+</div>
+</div>
+<!-- MODAL: TRIP LEAD DETAILS -->
+<div class="fixed inset-0 z-50 bg-charcoal-accent/60 backdrop-blur-xs hidden flex items-center justify-center p-4" id="modal-lead-details">
+<div class="bg-surface-card w-full max-w-lg rounded-xl shadow-2xl p-6 flex flex-col gap-4">
+<div class="flex items-center justify-between border-b border-border-clean/60 pb-3">
+<h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">Trip Manifest Details</h3>
+<button class="text-outline hover:text-charcoal-accent" onclick="closeModal('modal-lead-details')"><span class="material-symbols-outlined">close</span></button>
+</div>
+<div class="flex flex-col gap-3 text-body-sm">
+<div class="p-3 rounded-lg bg-surface-subtle flex flex-col">
+<span class="font-label-sm uppercase text-[10px] font-bold text-outline">Guest Identity</span>
+<span class="font-bold text-charcoal-accent text-base" id="leadDetName">Rohit Goyal</span>
+<span class="font-mono text-outline text-[12px]" id="leadDetPhone">+91 98721-39918</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="p-3 rounded-lg bg-surface-subtle flex flex-col">
+<span class="font-label-sm uppercase text-[10px] font-bold text-outline">Circuit</span>
+<span class="font-semibold text-charcoal-accent" id="leadDetCircuit">Kasol & Manikaran</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-subtle flex flex-col">
+<span class="font-label-sm uppercase text-[10px] font-bold text-outline">Allocated Fleet</span>
+<span class="font-semibold text-charcoal-accent" id="leadDetVehicle">17S Luxury Coach</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-subtle flex flex-col">
+<span class="font-label-sm uppercase text-[10px] font-bold text-outline">Operational Notes & Dispatch Status</span>
+<p class="text-charcoal-accent text-[13px] mt-1" id="leadDetNotes">Advance payment verified. Driver assigned.</p>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2 pt-3 border-t border-border-clean/60">
+<button class="px-4 py-2 rounded-lg bg-charcoal-accent text-on-primary font-semibold hover:bg-slate-800" onclick="closeModal('modal-lead-details')" type="button">Close Manifest</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // TAB NAVIGATION CONTROLLER
+  function switchTab(targetPath) {
+    // Hide all sections
+    document.querySelectorAll('.cms-section').forEach(sec => sec.classList.add('hidden'));
+
+    // Show target section
+    const targetSec = document.getElementById('section-' + targetPath);
+    if (targetSec) {
+      targetSec.classList.remove('hidden');
+    }
+
+    // Update active nav link styling in app shell aside
+    document.querySelectorAll('aside nav a').forEach(a => {
+      const path = a.getAttribute('data-path');
+      if (path === targetPath) {
+        a.classList.add('bg-charcoal-accent', 'text-on-primary', 'font-bold', 'shadow-sm');
+        a.classList.remove('text-on-surface-variant', 'hover:bg-surface-subtle', 'hover:text-on-surface');
+      } else {
+        a.classList.remove('bg-charcoal-accent', 'text-on-primary', 'font-bold', 'shadow-sm');
+        a.classList.add('text-on-surface-variant', 'hover:bg-surface-subtle', 'hover:text-on-surface');
+      }
+    });
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Intercept shell sidebar clicks
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('aside nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const path = link.getAttribute('data-path');
+        if (path) {
+          switchTab(path);
+        }
+      });
+    });
+
+    // Default to Dashboard
+    switchTab('dashboard');
+  });
+
+  // MODAL CONTROLLERS
+  function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.remove('hidden');
+    }
+  }
+
+  function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.add('hidden');
+    }
+  }
+
+  // Close modals on backdrop click
+  window.addEventListener('click', (e) => {
+    ['modal-add-package', 'modal-add-service', 'modal-upload-media', 'modal-add-testimonial', 'modal-lead-details'].forEach(id => {
+      const modal = document.getElementById(id);
+      if (modal && e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  });
+
+  // TOAST NOTIFICATIONS
+  let toastTimer;
+  function showToast(title, message) {
+    const toast = document.getElementById('toastNotification');
+    const tTitle = document.getElementById('toastTitle');
+    const tMsg = document.getElementById('toastMsg');
+
+    if (tTitle && title) tTitle.textContent = title;
+    if (tMsg && message) tMsg.textContent = message;
+
+    clearTimeout(toastTimer);
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    toastTimer = setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 3200);
+  }
+
+  // GLOBAL WEBSITE SYNC PROGRESS SIMULATION
+  function triggerGlobalSync() {
+    const container = document.getElementById('syncProgressContainer');
+    const bar = document.getElementById('syncProgressBar');
+    const label = document.getElementById('syncPercent');
+
+    container.classList.remove('hidden');
+    let width = 10;
+
+    const interval = setInterval(() => {
+      width += 15;
+      if (width > 100) width = 100;
+      bar.style.width = width + '%';
+      label.textContent = width + '%';
+
+      if (width >= 100) {
+        clearInterval(interval);
+        setTimeout(() => {
+          container.classList.add('hidden');
+          showToast('Live Web Sync Complete', 'budhramtravels.com cache purged & updated in 0.8s.');
+        }, 400);
+      }
+    }, 120);
+  }
+
+  // ACCORDION TOGGLER (FOR HOMEPAGE CMS)
+  function toggleAccordion(id) {
+    const el = document.getElementById(id);
+    const icon = document.getElementById('icon-' + id);
+    if (el) {
+      el.classList.toggle('hidden');
+      if (icon) {
+        icon.textContent = el.classList.contains('hidden') ? 'expand_more' : 'expand_less';
+      }
+    }
+  }
+
+  // FILTER & SEARCH LOGIC: PACKAGES
+  function filterPackages(category, btn) {
+    document.querySelectorAll('.circuit-filter-btn').forEach(b => {
+      b.classList.remove('bg-charcoal-accent', 'text-on-primary');
+      b.classList.add('bg-surface-subtle', 'text-charcoal-accent');
+    });
+    btn.classList.add('bg-charcoal-accent', 'text-on-primary');
+    btn.classList.remove('bg-surface-subtle', 'text-charcoal-accent');
+
+    const rows = document.querySelectorAll('.package-row');
+    rows.forEach(r => {
+      if (category === 'all' || r.getAttribute('data-type') === category) {
+        r.style.display = '';
+      } else {
+        r.style.display = 'none';
+      }
+    });
+  }
+
+  function searchPackages() {
+    const val = document.getElementById('circuitSearchInput').value.toLowerCase();
+    document.querySelectorAll('.package-row').forEach(row => {
+      const name = row.querySelector('.package-name').textContent.toLowerCase();
+      row.style.display = name.includes(val) ? '' : 'none';
+    });
+  }
+
+  // FILTER & SEARCH LOGIC: ENQUIRIES
+  function filterEnquiries(status, btn) {
+    document.querySelectorAll('.enquiry-filter-btn').forEach(b => {
+      b.classList.remove('bg-charcoal-accent', 'text-on-primary');
+      b.classList.add('bg-surface-subtle', 'text-charcoal-accent');
+    });
+    btn.classList.add('bg-charcoal-accent', 'text-on-primary');
+    btn.classList.remove('bg-surface-subtle', 'text-charcoal-accent');
+
+    document.querySelectorAll('.enquiry-row').forEach(row => {
+      if (status === 'all' || row.getAttribute('data-status') === status) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  function searchEnquiries() {
+    const val = document.getElementById('enquirySearchInput').value.toLowerCase();
+    document.querySelectorAll('.enquiry-row').forEach(row => {
+      const txt = row.textContent.toLowerCase();
+      row.style.display = txt.includes(val) ? '' : 'none';
+    });
+  }
+
+  function updateRowStatus(selectEl) {
+    const row = selectEl.closest('.enquiry-row');
+    const val = selectEl.value;
+    row.setAttribute('data-status', val);
+
+    if (val === 'new') {
+      selectEl.className = 'status-select text-[11px] font-label-sm font-bold bg-gold-subtle text-secondary px-2 py-1 rounded border-none focus:ring-1 focus:ring-secondary';
+    } else if (val === 'confirmed') {
+      selectEl.className = 'status-select text-[11px] font-label-sm font-bold bg-status-verified-bg text-status-verified px-2 py-1 rounded border-none focus:ring-1';
+    } else {
+      selectEl.className = 'status-select text-[11px] font-label-sm font-bold bg-surface-subtle text-charcoal-accent px-2 py-1 rounded border-none';
+    }
+
+    showToast('Enquiry Updated', 'Status saved & trip sheet refreshed.');
+  }
+
+  // FILTER LOGIC: MEDIA GALLERY
+  function filterMedia(category, btn) {
+    document.querySelectorAll('.media-filter-btn').forEach(b => {
+      b.classList.remove('bg-charcoal-accent', 'text-on-primary');
+      b.classList.add('bg-surface-subtle', 'text-charcoal-accent');
+    });
+    btn.classList.add('bg-charcoal-accent', 'text-on-primary');
+    btn.classList.remove('bg-surface-subtle', 'text-charcoal-accent');
+
+    document.querySelectorAll('.media-card').forEach(card => {
+      if (category === 'all' || card.getAttribute('data-category') === category) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // MODAL FORM SUBMISSIONS
+  function submitNewPackage(e) {
+    e.preventDefault();
+    const name = document.getElementById('newPkgName').value;
+    const cat = document.getElementById('newPkgCategory').value;
+    const dur = document.getElementById('newPkgDuration').value || '5 Nights / 6 Days';
+    const rate = document.getElementById('newPkgRate').value || 'Standard KM Rate';
+
+    const tbody = document.getElementById('circuitRows');
+    const tr = document.createElement('tr');
+    tr.className = 'package-row hover:bg-surface-canvas transition-colors';
+    tr.setAttribute('data-type', cat);
+    tr.innerHTML = `
+      <td class="py-4 px-4">
+        <div class="font-label-lg font-bold text-charcoal-accent package-name">${name}</div>
+        <div class="text-[12px] text-outline">Curated Route • High Elevation Verified</div>
+      </td>
+      <td class="py-4 px-4">
+        <span class="px-2 py-0.5 rounded text-[11px] font-label-sm font-bold bg-surface-container text-primary capitalize">${cat}</span>
+      </td>
+      <td class="py-4 px-4 font-medium">Delhi NCR</td>
+      <td class="py-4 px-4 font-medium">${dur}</td>
+      <td class="py-4 px-4 font-mono text-[12px] font-semibold text-secondary">${rate}</td>
+      <td class="py-4 px-4"><input type="checkbox" checked class="w-4 h-4 rounded text-charcoal-accent"></td>
+      <td class="py-4 pr-4 text-right">
+        <button onclick="openModal('modal-add-package')" class="font-label-md text-label-md font-semibold text-charcoal-accent hover:underline">Edit</button>
+      </td>
+    `;
+    tbody.prepend(tr);
+    closeModal('modal-add-package');
+    e.target.reset();
+    showToast('Circuit Added', `"${name}" has been published to live itineraries.`);
+  }
+
+  function submitNewService(e) {
+    e.preventDefault();
+    const title = document.getElementById('newServiceName').value;
+    const desc = document.getElementById('newServiceDesc').value;
+
+    const grid = document.getElementById('servicesGrid');
+    const card = document.createElement('div');
+    card.className = 'bg-surface-card rounded-xl shadow-sm p-5 flex flex-col justify-between service-card hover:shadow-md transition-shadow';
+    card.innerHTML = `
+      <div>
+        <div class="flex items-start justify-between mb-3">
+          <div class="w-12 h-12 rounded-xl bg-charcoal-accent text-gold-light flex items-center justify-center">
+            <span class="material-symbols-outlined text-[26px]">airport_shuttle</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-status-verified-bg text-status-verified">ACTIVE</span>
+            <button onclick="deleteCard(this)" class="text-outline hover:text-error transition-colors"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+          </div>
+        </div>
+        <h3 class="font-headline-sm text-headline-sm font-bold text-charcoal-accent">${title}</h3>
+        <p class="font-body-sm text-[13px] text-outline mt-1 mb-4">${desc || 'Luxury Force Tempo Traveller specification.'}</p>
+      </div>
+      <div class="flex items-center justify-between pt-3 border-t border-border-clean/60">
+        <span class="text-[12px] font-label-md font-bold text-secondary">Starting at Transparent KM Slab</span>
+        <button onclick="openModal('modal-add-service')" class="text-[12px] font-label-md font-semibold text-charcoal-accent hover:underline">Edit Service</button>
+      </div>
+    `;
+    grid.prepend(card);
+    closeModal('modal-add-service');
+    e.target.reset();
+    showToast('Service Created', `"${title}" is now visible on budhramtravels.com`);
+  }
+
+  function submitNewTestimonial(e) {
+    e.preventDefault();
+    const author = document.getElementById('newRevAuthor').value;
+    const circuit = document.getElementById('newRevCircuit').value || 'Delhi to Manali Trip';
+    const text = document.getElementById('newRevContent').value;
+
+    const grid = document.getElementById('testimonialsGrid');
+    const card = document.createElement('div');
+    card.className = 'bg-surface-card rounded-xl p-5 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow';
+    card.innerHTML = `
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-1 text-gold-light">
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="text-[12px] font-bold text-charcoal-accent ml-1">5.0</span>
+          </div>
+          <span class="px-2 py-0.5 rounded text-[10px] font-label-sm font-bold bg-status-verified-bg text-status-verified">VERIFIED</span>
+        </div>
+        <p class="font-body-sm text-[13px] text-charcoal-accent italic mb-4">"${text}"</p>
+      </div>
+      <div class="flex items-center justify-between pt-3 border-t border-border-clean/60">
+        <div>
+          <span class="font-label-md font-bold text-charcoal-accent block">${author}</span>
+          <span class="text-[11px] text-outline">${circuit}</span>
+        </div>
+        <button onclick="deleteCard(this)" class="text-outline hover:text-error"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+      </div>
+    `;
+    grid.prepend(card);
+    closeModal('modal-add-testimonial');
+    e.target.reset();
+    showToast('Review Published', `New testimonial from ${author} added.`);
+  }
+
+  function showLeadDetails(name, phone, circuit, vehicle, notes) {
+    document.getElementById('leadDetName').textContent = name;
+    document.getElementById('leadDetPhone').textContent = phone;
+    document.getElementById('leadDetCircuit').textContent = circuit;
+    document.getElementById('leadDetVehicle').textContent = vehicle;
+    document.getElementById('leadDetNotes').textContent = notes;
+    openModal('modal-lead-details');
+  }
+
+  function deleteCard(btn) {
+    const card = btn.closest('.service-card, .media-card, .bg-surface-card');
+    if (card) {
+      card.remove();
+      showToast('Item Removed', 'Deleted from CMS repository.');
+    }
+  }
+
+  function simulateMediaUpload() {
+    closeModal('modal-upload-media');
+    showToast('Media Synchronized', 'Fleet photograph uploaded & WebP variants generated.');
+  }
+
+  function handleFileUpload() {
+    simulateMediaUpload();
+  }
+</script></main></div></body></html>

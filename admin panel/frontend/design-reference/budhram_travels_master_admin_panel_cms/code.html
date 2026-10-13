@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#000000","tertiary-container":"#002113","surface-dim":"#cbdbf5","surface-card":"#FFFFFF","secondary-fixed":"#ffdcc3","gold-subtle":"#FEF3C7","on-secondary-fixed-variant":"#6e3900","inverse-primary":"#bec6e0","secondary-container":"#fe932c","surface-container-low":"#eff4ff","surface-canvas":"#F8FAFC","tertiary-fixed-dim":"#4edea3","on-primary-fixed-variant":"#3f465c","on-error-container":"#93000a","outline-variant":"#c6c6cd","surface-container-lowest":"#ffffff","status-verified-bg":"#ECFDF5","on-secondary-container":"#663500","surface-container-highest":"#d3e4fe","primary":"#000000","surface-container":"#e5eeff","on-secondary-fixed":"#2f1500","on-surface":"#0b1c30","gold-light":"#F59E0B","status-alert":"#EF4444","border-strong":"#334155","on-surface-variant":"#45464d","on-tertiary-fixed-variant":"#005236","inverse-on-surface":"#eaf1ff","status-verified":"#059669","on-background":"#0b1c30","on-primary":"#ffffff","error":"#ba1a1a","secondary-fixed-dim":"#ffb77d","on-error":"#ffffff","background":"#f8f9ff","surface-container-high":"#dce9ff","on-tertiary":"#ffffff","primary-fixed":"#dae2fd","surface-tint":"#565e74","status-alert-bg":"#FEF2F2","on-secondary":"#ffffff","surface-variant":"#d3e4fe","error-container":"#ffdad6","charcoal-accent":"#1E293B","on-tertiary-container":"#009668","inverse-surface":"#213145","secondary":"#904d00","surface-bright":"#f8f9ff","primary-fixed-dim":"#bec6e0","tertiary-fixed":"#6ffbbe","outline":"#76777d","border-clean":"#E2E8F0","primary-container":"#131b2e","surface":"#f8f9ff","surface-subtle":"#F1F5F9","on-primary-fixed":"#131b2e","on-primary-container":"#7c839b","on-tertiary-fixed":"#002113"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-sm":"0.5rem","space-xs":"0.25rem","space-xl":"2rem","margin":"1.5rem","gutter":"1rem","space-md":"1rem","space-lg":"1.5rem","gutter-lg":"1.5rem","margin-mobile":"1rem"},fontFamily:{"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"metric-val":["Plus Jakarta Sans"],"body-md":["Inter"]},fontSize:{"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"600"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"metric-val":["24px",{lineHeight:"28px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}]}}}}</script></head><body class="bg-surface-canvas text-on-surface font-body-md text-body-md"><aside class="fixed left-0 top-0 h-full w-72 bg-primary-container z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)] overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-primary-container"><div class="w-9 h-9 rounded-xl bg-secondary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[20px]">airport_shuttle</span></div><div class="flex flex-col leading-tight"><span class="font-headline-sm text-headline-sm text-inverse-on-surface font-bold tracking-tight">BUDHRAM</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Tour &amp; Travels Admin</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs rounded-xl bg-inverse-surface flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-status-verified animate-pulse"></span><span class="font-label-sm text-label-sm text-surface-bright">Luxury Fleet Grid</span></div><span class="font-label-sm text-label-sm text-gold-light font-bold">DELHI NCR</span></div></div><nav class="px-space-md py-space-xs flex flex-col gap-1" data-active-classes="bg-charcoal-accent text-on-primary font-bold rounded-xl"><div class="px-space-sm pt-space-xs pb-1 font-label-sm text-label-sm uppercase text-on-primary-container tracking-wider">Overview</div><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-charcoal-accent text-on-primary font-bold rounded-xl" data-path="dashboard-overview" href="#"><span class="material-symbols-outlined text-[19px]">dashboard</span><span>Dashboard Overview</span></a><div class="px-space-sm pt-space-sm pb-1 font-label-sm text-label-sm uppercase text-on-primary-container tracking-wider">Travel &amp; Fleet Ops</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="force-tempo-fleet" href="#"><span class="material-symbols-outlined text-[19px]">directions_bus</span><span>Force Tempo Fleet</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="mountain-chauffeurs" href="#"><span class="material-symbols-outlined text-[19px]">person_pin</span><span>Mountain Chauffeurs</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="expeditions-circuits" href="#"><span class="material-symbols-outlined text-[19px]">explore</span><span>Expeditions &amp; Circuits</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="transparent-km-calculator" href="#"><span class="material-symbols-outlined text-[19px]">calculate</span><span>KM &amp; Fare Matrix</span></a><div class="px-space-sm pt-space-sm pb-1 font-label-sm text-label-sm uppercase text-on-primary-container tracking-wider">Website &amp; CMS</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="homepage-sections" href="#"><span class="material-symbols-outlined text-[19px]">web</span><span>Homepage Sections</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="banner-slider-manager" href="#"><span class="material-symbols-outlined text-[19px]">view_carousel</span><span>Banner Slider</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="cabin-showcase-gallery" href="#"><span class="material-symbols-outlined text-[19px]">photo_library</span><span>Cabin Showcase</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="testimonials-manager" href="#"><span class="material-symbols-outlined text-[19px]">rate_review</span><span>Testimonials</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="faqs-manager" href="#"><span class="material-symbols-outlined text-[19px]">quiz</span><span>FAQs &amp; Help</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="contact-sync" href="#"><span class="material-symbols-outlined text-[19px]">contact_page</span><span>Header &amp; Contact Sync</span></a><div class="px-space-sm pt-space-sm pb-1 font-label-sm text-label-sm uppercase text-on-primary-container tracking-wider">Booking &amp; Dispatch</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="all-bookings" href="#"><span class="material-symbols-outlined text-[19px]">book_online</span><span>All Bookings</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="whatsapp-inquiries" href="#"><span class="material-symbols-outlined text-[19px]">chat</span><span>WhatsApp Inquiries</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="customer-crm" href="#"><span class="material-symbols-outlined text-[19px]">group</span><span>Customer CRM</span></a><div class="px-space-sm pt-space-sm pb-1 font-label-sm text-label-sm uppercase text-on-primary-container tracking-wider">System</div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="marketing-seo" href="#"><span class="material-symbols-outlined text-[19px]">query_stats</span><span>Marketing &amp; SEO</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-primary-container hover:bg-charcoal-accent hover:text-on-primary transition-colors" data-path="system-settings" href="#"><span class="material-symbols-outlined text-[19px]">settings</span><span>System Settings</span></a></nav></div><div class="p-space-md"><div class="p-space-sm rounded-xl bg-inverse-surface flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-surface-bright font-bold">Fleet Hub ID</span><span class="font-body-sm text-body-sm text-on-primary-container">DEL-MAIN-01</span></div><span class="material-symbols-outlined text-gold-light text-[20px]">verified</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-card/90 backdrop-blur-xl z-40 flex items-center justify-between px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-xl bg-status-verified-bg text-status-verified font-label-sm text-label-sm font-bold"><span class="material-symbols-outlined text-[16px]">speed</span><span>KM Meter Dispatch Live</span></div><div class="hidden xl:flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-secondary-container text-[16px]">support_agent</span><span>24/7 Desk: <strong class="text-on-surface">+91 9310847853</strong></span></div><div class="relative w-64 lg:w-80"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-xl bg-surface-subtle text-body-sm text-on-surface placeholder-outline focus:outline-none focus:bg-surface-card transition-all" placeholder="Search booking PNR, driver, vehicle #..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="relative p-2 rounded-xl hover:bg-surface-subtle text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-status-alert"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right leading-tight"><span class="font-label-sm text-label-sm text-on-surface font-bold">Admin Control</span><span class="font-label-sm text-label-sm text-secondary-container font-semibold">Super-Admin</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface-canvas min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Executive Metric Bar -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-md mb-space-lg">
+<!-- Stat 1: Bookings Breakdown -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Total Bookings</span>
+<span class="material-symbols-outlined text-[18px] text-secondary-container">book_online</span>
+</div>
+<div>
+<div class="font-metric-val text-metric-val text-on-surface">148</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">42 Him. • 68 Tri. • 38 NCR</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-status-verified font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +14.2% MoM
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live PNR Active</span>
+</div>
+</div>
+<!-- Stat 2: Active Fleet -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Force Fleet On-Road</span>
+<span class="material-symbols-outlined text-[18px] text-gold-light">directions_bus</span>
+</div>
+<div>
+<div class="font-metric-val text-metric-val text-on-surface flex items-baseline gap-1">
+<span>14</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ 18 Cruisers</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">12S &amp; 17S High-Roof Pushback</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center gap-space-xs">
+<div class="w-full bg-surface-subtle h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 77.7%;"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">78%</span>
+</div>
+</div>
+<!-- Stat 3: WhatsApp KM Inquiries -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">WhatsApp Leads (Today)</span>
+<span class="material-symbols-outlined text-[18px] text-status-verified">chat</span>
+</div>
+<div>
+<div class="font-metric-val text-metric-val text-on-surface flex items-baseline gap-2">
+<span>36</span>
+<span class="font-label-sm text-label-sm text-status-verified bg-status-verified-bg px-1.5 py-0.5 rounded-xl font-bold">New Quotes</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Direct KM Quotation desk</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Avg Response</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">&lt; 3 mins</span>
+</div>
+</div>
+<!-- Stat 4: Metred Revenue -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">KM Metered Revenue</span>
+<span class="material-symbols-outlined text-[18px] text-primary">account_balance_wallet</span>
+</div>
+<div>
+<div class="font-metric-val text-metric-val text-on-surface">₹18.42 L</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">100% Odometer Verified</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-status-verified flex items-center gap-0.5 font-bold">
+<span class="material-symbols-outlined text-[13px]">verified</span> 0% Fare Discrepancy
+        </span>
+</div>
+</div>
+<!-- Stat 5: Average Rating -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Guest Trip Rating</span>
+<span class="material-symbols-outlined text-[18px] text-gold-light" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div>
+<div class="font-metric-val text-metric-val text-on-surface flex items-center gap-1.5">
+<span>4.9</span>
+<div class="flex text-gold-light">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">320+ Verified Travelers</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mountain Safety</span>
+<span class="font-label-sm text-label-sm text-status-verified font-bold">5.0 / 5.0</span>
+</div>
+</div>
+<!-- Stat 6: 24/7 Desk Gateway -->
+<div class="bg-primary text-on-primary p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-surface-subtle mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-gold-subtle">24/7 Dispatch Desk</span>
+<span class="w-2.5 h-2.5 rounded-full bg-status-verified animate-ping"></span>
+</div>
+<div>
+<div class="font-label-lg text-label-lg font-bold text-on-primary truncate">+91 9310847853</div>
+<p class="font-body-sm text-body-sm text-surface-dim truncate mt-0.5">Deepanshuprajapati520@gmail.com</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-gold-light font-semibold">All-India Permits Active</span>
+<span class="material-symbols-outlined text-gold-light text-[16px]">pin_drop</span>
+</div>
+</div>
+</section>
+<!-- Executive Action Toolbar & Quick Launcher -->
+<section class="bg-surface-card p-space-md rounded-xl shadow-sm mb-space-lg flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-sm hover:bg-charcoal-accent transition-all" onclick="triggerToast('KM Booking modal initialized for dispatch team')">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>New KM Booking</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-subtle text-on-surface font-label-lg text-label-lg font-semibold hover:bg-surface-container-high transition-colors" onclick="switchTab('tab-website-cms'); triggerToast('Switched to Live Homepage CMS')">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">web</span>
+<span>Update Homepage CMS</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-subtle text-on-surface font-label-lg text-label-lg font-semibold hover:bg-surface-container-high transition-colors" onclick="switchTab('tab-fleet-ops'); triggerToast('Fleet inventory ready for registration')">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">airport_shuttle</span>
+<span>Add Force Coach</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-subtle text-on-surface font-label-lg text-label-lg font-semibold hover:bg-surface-container-high transition-colors" onclick="switchTab('tab-bookings'); triggerToast('Circuit publishing workflow opened')">
+<span class="material-symbols-outlined text-[18px] text-status-verified">terrain</span>
+<span>Publish Route</span>
+</button>
+</div>
+<!-- Live Sync Pill & Endpoint Ping -->
+<div class="flex items-center gap-space-md self-end xl:self-auto">
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-xl bg-gold-subtle text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px] text-secondary">sync</span>
+<span>Sync Status: <strong class="text-secondary">budhramtravels.com (Live)</strong></span>
+</div>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" href="https://budhramtravels.com/" rel="noopener noreferrer" target="_blank">
+<span>Visit Public Site</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</section>
+<!-- Main Multi-Tab Navigation Hub -->
+<div class="mb-space-lg flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-1 bg-surface-subtle p-1 rounded-xl">
+<button class="tab-pill active-tab px-space-md py-2 rounded-xl font-label-md text-label-md font-bold transition-all bg-surface-card text-on-surface shadow-sm" id="btn-tab-website-cms" onclick="switchTab('tab-website-cms')">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Website CMS &amp; Calculator</span>
+</span>
+</button>
+<button class="tab-pill px-space-md py-2 rounded-xl font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" id="btn-tab-fleet-ops" onclick="switchTab('tab-fleet-ops')">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">directions_bus</span>
+<span>Fleet &amp; Mountain Pilots</span>
+</span>
+</button>
+<button class="tab-pill px-space-md py-2 rounded-xl font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" id="btn-tab-bookings" onclick="switchTab('tab-bookings')">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+<span>Bookings &amp; WhatsApp Desk</span>
+</span>
+</button>
+<button class="tab-pill px-space-md py-2 rounded-xl font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" id="btn-tab-seo-media" onclick="switchTab('tab-seo-media')">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+<span>SEO &amp; Media Assets</span>
+</span>
+</button>
+</div>
+<!-- Search / Filter Indicator -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-status-verified"></span>
+<span>PostgreSQL Core Synced: <strong>0.04s latency</strong></span>
+</div>
+</div>
+<!-- TAB CONTENT PANELS -->
+<!-- TAB 1: WEBSITE CMS & CALCULATOR CONTROLLER -->
+<div class="tab-pane flex flex-col w-full gap-space-lg" id="tab-website-cms">
+<!-- Grid: Hero Controller + Transparent Fare Configurator -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Left Panel: Live Public Hero & Messaging Configuration (7 Cols) -->
+<div class="xl:col-span-7 bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-xl bg-gold-subtle text-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">space_dashboard</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Public Hero Section Controller</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live controls directly editing <code class="text-secondary font-semibold">https://budhramtravels.com/#home</code></p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Section Enabled</span>
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+</div>
+<div class="space-y-space-md pt-space-xs">
+<!-- Hero Headline Field -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Main Value Proposition H1 Title</label>
+<input class="w-full px-space-md py-2.5 rounded-xl bg-surface-subtle text-body-md text-on-surface font-bold focus:outline-none focus:bg-surface-card transition-all" id="cms-hero-title" type="text" value="India's Great Roads, Travelled in Utmost Luxury."/>
+</div>
+<!-- Hero Subheadline -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Subtitle &amp; Trust Anchor</label>
+<input class="w-full px-space-md py-2 rounded-xl bg-surface-subtle text-body-md text-on-surface focus:outline-none focus:bg-surface-card transition-all" id="cms-hero-subtitle" type="text" value="Pan-India Private Charter Fleet • Transparent Kilometre Meter Billing"/>
+</div>
+<!-- Editorial Description -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Company Narrative Copy</label>
+<textarea class="w-full px-space-md py-2 rounded-xl bg-surface-subtle text-body-md text-on-surface focus:outline-none focus:bg-surface-card transition-all resize-none" rows="3">Budhram Tour And Travels crafts bespoke road journeys across India. Featuring our flagship modern Force Tempo Travellers with executive mahogany cockpits, plush pushback leatherette suites, and certified mountain chauffeurs.</textarea>
+</div>
+<!-- CTAs and Badges Toggles -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-sm bg-surface-subtle rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Primary CTA Button</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Instant KM Quotation Modal</span>
+</div>
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<div class="p-space-sm bg-surface-subtle rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Direct WhatsApp CTA</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Linked to +91 9310847853</span>
+</div>
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+</div>
+<!-- Pillar Trust Highlights (The 4 verified chips) -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-space-xs">Floating Micro Badges (Hero Grid)</label>
+<div class="flex flex-wrap gap-2">
+<span class="px-space-sm py-1 rounded-xl bg-status-verified-bg text-status-verified font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> 100% Honest Odometer
+              </span>
+<span class="px-space-sm py-1 rounded-xl bg-surface-subtle text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">airline_seat_recline_extra</span> Pushback Recliners
+              </span>
+<span class="px-space-sm py-1 rounded-xl bg-surface-subtle text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">terrain</span> Mountain Chauffeurs
+              </span>
+<span class="px-space-sm py-1 rounded-xl bg-surface-subtle text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">gpp_good</span> Sanitized Fleet
+              </span>
+</div>
+</div>
+<!-- Action Footprint -->
+<div class="flex items-center justify-between pt-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Last deployed by Super-Admin: 12 minutes ago</span>
+<button class="px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-charcoal-accent transition-colors flex items-center gap-space-xs" onclick="triggerToast('Live hero section updated successfully on budhramtravels.com!')">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+<span>Deploy Changes</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Panel: Instant KM & Fare Matrix Engine (5 Cols) -->
+<div class="xl:col-span-5 bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-xl bg-surface-subtle text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">calculate</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">KM Fare Pricing Engine</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Algorithm powering public instant quote widget</p>
+</div>
+</div>
+<span class="px-space-xs py-1 rounded-xl bg-status-verified-bg text-status-verified font-label-sm text-label-sm font-bold">Active Engine</span>
+</div>
+<!-- Dynamic Pricing Tier Cards -->
+<div class="space-y-space-sm">
+<!-- 12S Force Rate -->
+<div class="p-space-sm rounded-xl bg-surface-subtle flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">12 Seater Force Pushback</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Intimate family &amp; mountain trips</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">₹</span>
+<input class="w-16 px-2 py-1 rounded-xl bg-surface-card text-on-surface font-bold text-center focus:outline-none" type="number" value="24"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ KM</span>
+</div>
+</div>
+<!-- 17S Grand Coach -->
+<div class="p-space-sm rounded-xl bg-surface-subtle flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">17 Seater Grand Touring Coach</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Large pilgrimage &amp; wedding transfers</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">₹</span>
+<input class="w-16 px-2 py-1 rounded-xl bg-surface-card text-on-surface font-bold text-center focus:outline-none" type="number" value="28"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ KM</span>
+</div>
+</div>
+<!-- Flagship Maharaja Cruiser -->
+<div class="p-space-sm rounded-xl bg-gold-subtle/50 flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-bold text-secondary">Luxury Executive Cruiser (Flagship)</div>
+<div class="font-body-sm text-body-sm text-on-secondary-fixed-variant">Mahogany cockpit &amp; cream leather recliners</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-secondary font-bold">₹</span>
+<input class="w-16 px-2 py-1 rounded-xl bg-surface-card text-on-surface font-bold text-center focus:outline-none" type="number" value="34"/>
+<span class="font-label-sm text-label-sm text-secondary">/ KM</span>
+</div>
+</div>
+</div>
+<!-- Add-on operational allowances -->
+<div class="grid grid-cols-2 gap-space-sm mt-space-md">
+<div class="p-space-sm rounded-xl bg-surface-subtle">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Driver Night Allowance</span>
+<div class="flex items-center gap-1 mt-1">
+<span class="font-body-md text-body-md font-bold text-on-surface">₹500</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ night halt</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-subtle">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">State Toll Taxes</span>
+<div class="flex items-center gap-1 mt-1">
+<span class="font-body-md text-body-md font-bold text-status-verified">Pass-Through</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fastag actuals</span>
+</div>
+</div>
+</div>
+<!-- Formula Preview simulation -->
+<div class="mt-space-md p-space-sm rounded-xl bg-surface-canvas flex flex-col gap-1">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Instant KM Calculation Formula</div>
+<div class="font-body-sm text-body-sm text-on-surface">
+<code>Estimated Total = (Total KM × Base Rate) + (Night Halts × ₹500) + State Fastag</code>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-status-verified flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[15px]">check_circle</span> Calculator Synced
+          </span>
+<button class="px-space-md py-2 rounded-xl bg-charcoal-accent text-on-primary font-label-md text-label-md font-bold hover:bg-primary transition-colors" onclick="triggerToast('KM Fare matrix updated in production!')">
+            Update Fare Algorithm
+          </button>
+</div>
+</div>
+</div>
+<!-- Homepage Structure & Sections Order Manager -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Homepage Section Architecture &amp; Visibility</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Toggle active sections and drag layout hierarchy across the public site</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 rounded-xl bg-surface-subtle text-on-surface-variant font-label-md text-label-md hover:text-on-surface" onclick="triggerToast('Section layout reset to default')">
+            Reset Order
+          </button>
+<button class="px-space-md py-1.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-charcoal-accent" onclick="triggerToast('All 9 section toggles saved to web database')">
+            Save Page Order
+          </button>
+</div>
+</div>
+<!-- Sections Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-sm">
+<!-- Section 1 -->
+<div class="p-space-sm rounded-xl bg-surface-subtle flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">drag_indicator</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">01. Hero Banner &amp; Slider</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Flagship Fleet Intro &amp; Fast CTA</div>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<!-- Section 2 -->
+<div class="p-space-sm rounded-xl bg-surface-subtle flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">drag_indicator</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">02. 4-Pillar Budhram Standards</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Fair KM Billing, Mountain Pilots</div>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<!-- Section 3 -->
+<div class="p-space-sm rounded-xl bg-surface-subtle flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">drag_indicator</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">03. Force Tempo Fleet Inventory</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">12 &amp; 17 Seater Coach Specifications</div>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<!-- Section 4 -->
+<div class="p-space-sm rounded-xl bg-surface-subtle flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">drag_indicator</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">04. Cabin Showcase Gallery</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Cream Recliners &amp; Mahogany Cockpit</div>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<!-- Section 5 -->
+<div class="p-space-sm rounded-xl bg-surface-subtle flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">drag_indicator</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">05. Popular Expeditions &amp; Routes</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Manali, Kasol, Spiti, Rajasthan</div>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<!-- Section 6 -->
+<div class="p-space-sm rounded-xl bg-surface-subtle flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">drag_indicator</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">06. 4-Step Booking Roadmap</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">WhatsApp Coordination Workflow</div>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<!-- Section 7 -->
+<div class="p-space-sm rounded-xl bg-surface-subtle flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">drag_indicator</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">07. Verified Traveler Feedback</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">4.9 Star Verified Reviews Desk</div>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<!-- Section 8 -->
+<div class="p-space-sm rounded-xl bg-surface-subtle flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">drag_indicator</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">08. Frequently Asked Questions</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Accordions &amp; Fair Billing Policies</div>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<!-- Section 9 -->
+<div class="p-space-sm rounded-xl bg-surface-subtle flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">drag_indicator</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">09. 24/7 Desk &amp; Footer Gateway</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">+91 9310847853 Direct Channels</div>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 2: FLEET & HIMALAYAN PILOTS -->
+<div class="tab-pane hidden flex flex-col w-full gap-space-lg" id="tab-fleet-ops">
+<!-- Fleet Overview Topbar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-card p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-10 h-10 rounded-xl bg-surface-subtle text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">directions_bus</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Force Tempo Fleet &amp; Chauffeur Command</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live telemetry, pushback cabin specs, and driver mountain badges</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-subtle text-on-surface font-label-md text-label-md font-bold hover:bg-surface-container-high transition-colors" onclick="triggerToast('Running digital odometer sync across all 18 Force coaches...')">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+<span>Audit All Odometers</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-charcoal-accent transition-colors" onclick="triggerToast('Opening vehicle registration modal')">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Register New Vehicle</span>
+</button>
+</div>
+</div>
+<!-- Active Fleet Table -->
+<div class="bg-surface-card rounded-xl shadow-sm overflow-hidden">
+<div class="p-space-md bg-surface-subtle flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Operational Fleet Roster</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14 Active • 3 Standby • 1 Service</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-surface-canvas text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="px-space-md py-space-sm">Vehicle &amp; Reg Number</th>
+<th class="px-space-md py-space-sm">Configuration / Seater</th>
+<th class="px-space-md py-space-sm">Current Dispatch Status</th>
+<th class="px-space-md py-space-sm">Assigned Mountain Pilot</th>
+<th class="px-space-md py-space-sm text-right">Odometer Log</th>
+<th class="px-space-md py-space-sm text-right">Verification</th>
+<th class="px-space-md py-space-sm text-center">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-clean/50 text-body-md text-on-surface">
+<!-- Row 1: Flagship Cruiser -->
+<tr class="hover:bg-surface-subtle/50 transition-colors">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-subtle flex items-center justify-center font-bold text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-gold-light">stars</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1.5">
+<span>Luxury Force Executive Cruiser</span>
+<span class="px-1.5 py-0.2 bg-gold-subtle text-secondary font-label-sm text-label-sm rounded-xl">Flagship</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Reg: <strong class="text-on-surface">DL-1VC-8492</strong> • Metallic Grey</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">12 Seater Maharaja Pushback</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Dual High-Cool AC • Woodgrain</div>
+</td>
+<td class="px-space-md py-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-xl bg-gold-subtle text-secondary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span>On Trip: Delhi → Atal Tunnel &amp; Sissu</span>
+</span>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">RN</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Rajesh Negi</div>
+<div class="font-body-sm text-body-sm text-status-verified flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">verified</span> Mountain Certified
+                    </div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right font-metric-val text-[16px] text-on-surface font-semibold">
+                42,180 km
+              </td>
+<td class="px-space-md py-space-md text-right">
+<span class="px-space-sm py-1 rounded-xl bg-status-verified-bg text-status-verified font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span> Meter Verified
+                </span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-xl hover:bg-surface-subtle text-on-surface-variant hover:text-on-surface" onclick="triggerToast('Viewing telemetry for DL-1VC-8492')" title="Inspect Live Telemetry">
+<span class="material-symbols-outlined text-[18px]">gps_fixed</span>
+</button>
+<button class="p-1.5 rounded-xl hover:bg-surface-subtle text-status-verified" onclick="triggerToast('Pinging Chauffeur Rajesh Negi on WhatsApp')" title="Ping Driver WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: 17S Grand Touring -->
+<tr class="hover:bg-surface-subtle/50 transition-colors">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-subtle flex items-center justify-center font-bold text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-on-surface">airport_shuttle</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">17 Seater Force Grand Touring Coach</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Reg: <strong class="text-on-surface">HR-55T-2041</strong> • Metallic Silver</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">17 Seater High-Capacity</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Heavy Luggage Carrier + 6ft Headroom</div>
+</td>
+<td class="px-space-md py-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-xl bg-status-verified-bg text-status-verified font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-verified"></span>
+<span>Available (Delhi NCR Depot)</span>
+</span>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-charcoal-accent text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">VS</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Vikram Sharma</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Ready for Rajasthan Circuit</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right font-metric-val text-[16px] text-on-surface font-semibold">
+                68,910 km
+              </td>
+<td class="px-space-md py-space-md text-right">
+<span class="px-space-sm py-1 rounded-xl bg-status-verified-bg text-status-verified font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span> Meter Verified
+                </span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-xl hover:bg-surface-subtle text-secondary-container" onclick="triggerToast('Dispatch order created for HR-55T-2041')" title="Dispatch Vehicle">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<button class="p-1.5 rounded-xl hover:bg-surface-subtle text-status-verified" onclick="triggerToast('Pinging Vikram Sharma')" title="Ping Driver">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: 12 Seater Cream Pushback -->
+<tr class="hover:bg-surface-subtle/50 transition-colors">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-subtle flex items-center justify-center font-bold text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-on-surface">airline_seat_recline_extra</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">12 Seater Force Pushback Executive</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Reg: <strong class="text-on-surface">DL-1VB-9014</strong> • Pure White</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">12 Seater Recliner</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Pristine Cream Leatherette + USB Hubs</div>
+</td>
+<td class="px-space-md py-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-xl bg-surface-subtle text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px] text-secondary">schedule</span>
+<span>Scheduled (Kasol &amp; Tirthan Valley)</span>
+</span>
+</td>
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">JS</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Jaswinder Singh</div>
+<div class="font-body-sm text-body-sm text-status-verified flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">verified</span> Rohtang Snow Clearance
+                    </div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md text-right font-metric-val text-[16px] text-on-surface font-semibold">
+                31,450 km
+              </td>
+<td class="px-space-md py-space-md text-right">
+<span class="px-space-sm py-1 rounded-xl bg-status-verified-bg text-status-verified font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span> Meter Verified
+                </span>
+</td>
+<td class="px-space-md py-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-xl hover:bg-surface-subtle text-on-surface-variant hover:text-on-surface" onclick="triggerToast('Viewing schedule for DL-1VB-9014')">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+</button>
+<button class="p-1.5 rounded-xl hover:bg-surface-subtle text-status-verified" onclick="triggerToast('Pinging Jaswinder Singh')">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Chauffeur Safety & Mountain Pilot Credentials Card Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Pilot 1 -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-subtle flex items-center justify-center font-bold text-on-surface text-[18px]">RN</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Rajesh Negi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lead Himalayan Chauffeur (14 Yrs Exp)</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-status-verified text-[20px]">verified</span>
+</div>
+<div class="my-space-md space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Himachal &amp; Ladakh Passes</span>
+<span class="font-bold text-on-surface">54 Expeditions</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Snow-Chain Certified</span>
+<span class="font-bold text-status-verified">Level-3 Master</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Safety Zero-Incident Log</span>
+<span class="font-bold text-on-surface">100% Clean</span>
+</div>
+</div>
+<a class="w-full py-2 rounded-xl bg-surface-subtle text-on-surface text-center font-label-md text-label-md font-bold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1" href="https://wa.me/919310847853?text=Fleet%20Dispatch%20Alert%20for%20Rajesh%20Negi" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-status-verified">chat</span>
+<span>Dispatch WhatsApp Briefing</span>
+</a>
+</div>
+<!-- Pilot 2 -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-subtle flex items-center justify-center font-bold text-on-surface text-[18px]">VS</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Vikram Sharma</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Golden Triangle &amp; Desert Master</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-status-verified text-[20px]">verified</span>
+</div>
+<div class="my-space-md space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Rajasthan &amp; NCR Highway</span>
+<span class="font-bold text-on-surface">82 Circuits</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">English &amp; Hindi Fluency</span>
+<span class="font-bold text-on-surface">VIP Concierge Ready</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Guest Review Average</span>
+<span class="font-bold text-gold-light">4.95 / 5.0</span>
+</div>
+</div>
+<a class="w-full py-2 rounded-xl bg-surface-subtle text-on-surface text-center font-label-md text-label-md font-bold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1" href="https://wa.me/919310847853?text=Fleet%20Dispatch%20Alert%20for%20Vikram%20Sharma" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-status-verified">chat</span>
+<span>Dispatch WhatsApp Briefing</span>
+</a>
+</div>
+<!-- Pilot 3 -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-subtle flex items-center justify-center font-bold text-on-surface text-[18px]">JS</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Jaswinder Singh</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">High-Altitude Spiti Specialist</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-status-verified text-[20px]">verified</span>
+</div>
+<div class="my-space-md space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Atal Tunnel &amp; Kunzum Pass</span>
+<span class="font-bold text-on-surface">41 High Crossings</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Commercial Badge #</span>
+<span class="font-bold text-on-surface">DEL-COMM-4819</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Guest Review Average</span>
+<span class="font-bold text-gold-light">4.98 / 5.0</span>
+</div>
+</div>
+<a class="w-full py-2 rounded-xl bg-surface-subtle text-on-surface text-center font-label-md text-label-md font-bold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1" href="https://wa.me/919310847853?text=Fleet%20Dispatch%20Alert%20for%20Jaswinder%20Singh" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-status-verified">chat</span>
+<span>Dispatch WhatsApp Briefing</span>
+</a>
+</div>
+</div>
+</div>
+<!-- TAB 3: BOOKINGS & WHATSAPP KM INQUIRIES DESK -->
+<div class="tab-pane hidden flex flex-col w-full gap-space-lg" id="tab-bookings">
+<!-- Filter Pills & Search Desk Bar -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-1.5">
+<button class="booking-filter-btn px-space-md py-1.5 rounded-xl font-label-sm text-label-sm font-bold bg-primary text-on-primary" onclick="filterBookings('all', this)">
+          All Expeditions (148)
+        </button>
+<button class="booking-filter-btn px-space-md py-1.5 rounded-xl font-label-sm text-label-sm font-medium bg-surface-subtle text-on-surface hover:bg-surface-container-high" onclick="filterBookings('himalayan', this)">
+          Himalayan Circuits (42)
+        </button>
+<button class="booking-filter-btn px-space-md py-1.5 rounded-xl font-label-sm text-label-sm font-medium bg-surface-subtle text-on-surface hover:bg-surface-container-high" onclick="filterBookings('triangle', this)">
+          Golden Triangle &amp; Rajasthan (68)
+        </button>
+<button class="booking-filter-btn px-space-md py-1.5 rounded-xl font-label-sm text-label-sm font-medium bg-surface-subtle text-on-surface hover:bg-surface-container-high" onclick="filterBookings('ncr', this)">
+          Custom NCR / Corporate (38)
+        </button>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[16px]">filter_list</span>
+<input class="w-full pl-9 pr-3 py-1.5 rounded-xl bg-surface-subtle font-body-sm text-body-sm text-on-surface placeholder-outline focus:outline-none focus:bg-surface-card" id="bookingSearchInput" onkeyup="searchBookingsTable()" placeholder="Quick filter by client name..." type="text"/>
+</div>
+<button class="p-2 rounded-xl bg-surface-subtle text-on-surface-variant hover:text-on-surface" onclick="triggerToast('Exported Bookings Excel Sheet with Odometer logs')" title="Export CSV">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<!-- Bookings & Inquiry Records Table -->
+<div class="bg-surface-card rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left" id="masterBookingsTable">
+<thead class="bg-surface-canvas text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="px-space-md py-space-sm">PNR &amp; Guest Info</th>
+<th class="px-space-md py-space-sm">Circuit Route &amp; Dates</th>
+<th class="px-space-md py-space-sm">Coach Selection</th>
+<th class="px-space-md py-space-sm text-right">Estimated KM &amp; Fare</th>
+<th class="px-space-md py-space-sm text-center">Status</th>
+<th class="px-space-md py-space-sm text-right">Quick Dispatch</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-clean/50 text-body-md text-on-surface">
+<!-- Record 1: Suresh Kumar (Himalayan) -->
+<tr class="booking-row himalayan hover:bg-surface-subtle/50 transition-colors">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-label-md">SK</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface client-name">Suresh Kumar &amp; Family</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">PNR-BT-9104 • 8 Pax Group</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="font-label-md text-label-md font-bold text-on-surface">Delhi NCR → Manali &amp; Atal Tunnel</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Depart: 18 Oct • Return: 23 Oct (6 Days)</div>
+</td>
+<td class="px-space-md py-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold px-2 py-0.5 rounded-xl bg-surface-subtle text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">airport_shuttle</span> 12S Luxury Executive Cruiser
+                </span>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">DL-1VC-8492 (Rajesh Negi)</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<div class="font-metric-val text-[16px] text-on-surface font-bold">₹38,400</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">~1,180 KM metered log</div>
+</td>
+<td class="px-space-md py-space-md text-center">
+<span class="px-space-sm py-1 rounded-xl bg-status-verified-bg text-status-verified font-label-sm text-label-sm font-bold">
+                  Confirmed (Advance Paid)
+                </span>
+</td>
+<td class="px-space-md py-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<a class="inline-flex items-center gap-1 px-space-sm py-1 rounded-xl bg-status-verified-bg text-status-verified font-label-sm text-label-sm font-bold hover:bg-status-verified hover:text-on-primary transition-all" href="https://wa.me/919310847853?text=Hello%20Suresh%20Kumar,%20Your%20Budhram%20Tour%20to%20Manali%20is%20dispatched.%20Vehicle:%20DL-1VC-8492" target="_blank">
+<span class="material-symbols-outlined text-[14px]">chat</span> WhatsApp
+                  </a>
+<button class="p-1 rounded-xl hover:bg-surface-subtle text-on-surface-variant" onclick="triggerToast('Opened trip sheet for PNR-BT-9104')">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Record 2: Rohit Goyal (Himalayan) -->
+<tr class="booking-row himalayan hover:bg-surface-subtle/50 transition-colors">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-subtle text-on-surface flex items-center justify-center font-bold text-label-md">RG</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface client-name">Rohit Goyal</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">PNR-BT-8842 • 14 Pax Corporate</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="font-label-md text-label-md font-bold text-on-surface">Chandigarh → Kasol &amp; Manikaran</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Depart: 20 Oct • Return: 24 Oct (5 Days)</div>
+</td>
+<td class="px-space-md py-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold px-2 py-0.5 rounded-xl bg-surface-subtle text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-primary">directions_bus</span> 17 Seater Grand Touring Coach
+                </span>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">HR-55T-2041 (Assigned)</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<div class="font-metric-val text-[16px] text-on-surface font-bold">₹44,200</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">~1,250 KM metered log</div>
+</td>
+<td class="px-space-md py-space-md text-center">
+<span class="px-space-sm py-1 rounded-xl bg-gold-subtle text-secondary font-label-sm text-label-sm font-bold">
+                  In Progress / En Route
+                </span>
+</td>
+<td class="px-space-md py-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<a class="inline-flex items-center gap-1 px-space-sm py-1 rounded-xl bg-status-verified-bg text-status-verified font-label-sm text-label-sm font-bold hover:bg-status-verified hover:text-on-primary transition-all" href="https://wa.me/919310847853?text=Hello%20Rohit,%20checking%20in%20on%20your%20Kasol%20and%20Manikaran%20journey%20progress." target="_blank">
+<span class="material-symbols-outlined text-[14px]">chat</span> WhatsApp
+                  </a>
+<button class="p-1 rounded-xl hover:bg-surface-subtle text-on-surface-variant" onclick="triggerToast('Odometer audit: 642 km logged so far')">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Record 3: Vikas Sharma (Rajasthan) -->
+<tr class="booking-row triangle hover:bg-surface-subtle/50 transition-colors">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-subtle text-on-surface flex items-center justify-center font-bold text-label-md">VS</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface client-name">Vikas Sharma</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">PNR-BT-7731 • 10 Pax Family</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="font-label-md text-label-md font-bold text-on-surface">Rajasthan Circuit (Jaipur &amp; Udaipur)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">14 Big Suitcases boot space requested</div>
+</td>
+<td class="px-space-md py-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold px-2 py-0.5 rounded-xl bg-surface-subtle text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">luggage</span> 12S Force Carrier Edition
+                </span>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">DL-1VB-9014 (Depot Check)</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<div class="font-metric-val text-[16px] text-on-surface font-bold">₹52,800</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">~1,760 KM metered log</div>
+</td>
+<td class="px-space-md py-space-md text-center">
+<span class="px-space-sm py-1 rounded-xl bg-status-verified-bg text-status-verified font-label-sm text-label-sm font-bold">
+                  Confirmed &amp; Ready
+                </span>
+</td>
+<td class="px-space-md py-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<a class="inline-flex items-center gap-1 px-space-sm py-1 rounded-xl bg-status-verified-bg text-status-verified font-label-sm text-label-sm font-bold hover:bg-status-verified hover:text-on-primary transition-all" href="https://wa.me/919310847853?text=Hello%20Vikas%20Sharma,%20your%2014-suitcase%20luggage%20carrier%20has%20been%20confirmed." target="_blank">
+<span class="material-symbols-outlined text-[14px]">chat</span> WhatsApp
+                  </a>
+<button class="p-1 rounded-xl hover:bg-surface-subtle text-on-surface-variant" onclick="triggerToast('Carrier inspection passed for 14 bags')">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Record 4: Ananya Sen (NCR / Wedding) -->
+<tr class="booking-row ncr hover:bg-surface-subtle/50 transition-colors">
+<td class="px-space-md py-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-surface-subtle text-on-surface flex items-center justify-center font-bold text-label-md">AS</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface client-name">Ananya Sen (Wedding Desk)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">PNR-BT-9902 • 17 Pax Transfer</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md">
+<div class="font-label-md text-label-md font-bold text-on-surface">IGI Airport T3 → Gurugram Resort</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Shuttle service • 3 Continuous Halts</div>
+</td>
+<td class="px-space-md py-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold px-2 py-0.5 rounded-xl bg-surface-subtle text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-primary">airport_shuttle</span> 17 Seater Force Coach
+                </span>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">HR-55T-2041 (Pilot Vikram)</div>
+</td>
+<td class="px-space-md py-space-md text-right">
+<div class="font-metric-val text-[16px] text-on-surface font-bold">₹16,500</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">NCR Flat KM Block</div>
+</td>
+<td class="px-space-md py-space-md text-center">
+<span class="px-space-sm py-1 rounded-xl bg-surface-subtle text-on-surface font-label-sm text-label-sm font-semibold">
+                  Scheduled
+                </span>
+</td>
+<td class="px-space-md py-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<a class="inline-flex items-center gap-1 px-space-sm py-1 rounded-xl bg-status-verified-bg text-status-verified font-label-sm text-label-sm font-bold hover:bg-status-verified hover:text-on-primary transition-all" href="https://wa.me/919310847853?text=Hello%20Ananya,%20confirming%20the%20Force%20Tempo%20for%20airport%20guest%20transfer." target="_blank">
+<span class="material-symbols-outlined text-[14px]">chat</span> WhatsApp
+                  </a>
+<button class="p-1 rounded-xl hover:bg-surface-subtle text-on-surface-variant" onclick="triggerToast('Flight tracking enabled for T3 arrival')">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Bottom Quick Status Controller -->
+<div class="p-space-md bg-surface-subtle flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Quick Status Workflow:</span>
+<span class="px-2 py-0.5 rounded-xl bg-surface-card text-on-surface font-label-sm text-label-sm font-bold">1. New Inquiry</span>
+<span class="material-symbols-outlined text-outline text-[14px]">arrow_forward</span>
+<span class="px-2 py-0.5 rounded-xl bg-surface-card text-status-verified font-label-sm text-label-sm font-bold">2. Confirmed KM</span>
+<span class="material-symbols-outlined text-outline text-[14px]">arrow_forward</span>
+<span class="px-2 py-0.5 rounded-xl bg-surface-card text-secondary font-label-sm text-label-sm font-bold">3. Dispatched</span>
+<span class="material-symbols-outlined text-outline text-[14px]">arrow_forward</span>
+<span class="px-2 py-0.5 rounded-xl bg-surface-card text-on-surface font-label-sm text-label-sm font-bold">4. Audit Closed</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">
+          Showing 4 of 148 verified trips
+        </div>
+</div>
+</div>
+</div>
+<!-- TAB 4: SEO META, MEDIA GALLERY & CONTACT SYNC -->
+<div class="tab-pane hidden flex flex-col w-full gap-space-lg" id="tab-seo-media">
+<!-- Global SEO & Social Card Preview Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- SEO Meta Fields Form (7 Cols) -->
+<div class="xl:col-span-7 bg-surface-card p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-xl bg-surface-subtle text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">travel_explore</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Search Engine Optimization (SEO)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Global metadata tags for Google organic rankings across Delhi NCR</p>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Global SEO Title Tag (&lt;title&gt;)</label>
+<input class="w-full px-space-md py-2 rounded-xl bg-surface-subtle text-body-md text-on-surface font-bold focus:outline-none focus:bg-surface-card" id="seo-title" type="text" value="Budhram Tour And Travels | Luxury Force Tempo Traveller Rental Delhi NCR"/>
+<span class="text-right block font-label-sm text-label-sm text-status-verified mt-0.5">68 / 70 characters (Optimal)</span>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Meta Description</label>
+<textarea class="w-full px-space-md py-2 rounded-xl bg-surface-subtle text-body-md text-on-surface focus:outline-none focus:bg-surface-card resize-none" rows="3">Book luxury 12 &amp; 17 seater Force Tempo Travellers in Delhi NCR with pushback recliners, executive mahogany cockpits, and certified mountain chauffeurs. 100% honest odometer KM billing.</textarea>
+<span class="text-right block font-label-sm text-label-sm text-status-verified mt-0.5">158 / 160 characters (Optimal)</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Canonical URL</label>
+<input class="w-full px-space-md py-2 rounded-xl bg-surface-subtle text-body-sm text-on-surface font-semibold focus:outline-none" type="text" value="https://budhramtravels.com/"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Index Robots Directive</label>
+<select class="w-full px-space-md py-2 rounded-xl bg-surface-subtle text-body-sm text-on-surface font-semibold focus:outline-none">
+<option>index, follow (Recommended)</option>
+<option>noindex, nofollow (Staging)</option>
+</select>
+</div>
+</div>
+<div class="pt-space-xs flex justify-end">
+<button class="px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-charcoal-accent transition-colors" onclick="triggerToast('SEO Meta Tags deployed to live website index')">
+            Publish SEO Directives
+          </button>
+</div>
+</div>
+<!-- Social Share / OpenGraph Card Preview (5 Cols) -->
+<div class="xl:col-span-5 bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md font-bold text-on-surface">SERP &amp; WhatsApp Card Preview</span>
+<span class="font-label-sm text-label-sm text-status-verified bg-status-verified-bg px-2 py-0.5 rounded-xl font-bold">OG Active</span>
+</div>
+<!-- Mock WhatsApp / Google Snippet Preview -->
+<div class="rounded-xl overflow-hidden shadow-sm bg-surface-subtle p-space-sm">
+<div class="w-full h-36 rounded-xl overflow-hidden relative mb-space-sm bg-primary-container">
+<img class="w-full h-full object-cover" data-alt="High-roof metallic grey luxury Force Tempo Traveller parked in front of snow-capped Himalayan mountains with blue sky, showcasing panoramic windows and luggage rack in clean editorial automotive photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEpNw4RHAEKWj27RIK-eV95Y341UCrgS9S7X2hxQRS-yrlnfXww-zVWnOVLfh4oBHoOn3hyyY33o1OzvBc7yvxKsefcadx-h5Gd6bmDUr62IuFPxqN6I8ditPGI0Eu-MIx0SqztwlbMnHE5txQhsYqRgZwVfzzINj6J1DG90Qi1F4UorNlHBaSjWSiEfDMMcum4bzNP63i_wxRhEkjdkKH0X1hDInXFBQbQ8k5l6MafiyBzsdt_aKb"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-xl bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-bold">
+                budhramtravels.com
+              </div>
+</div>
+<div class="font-label-md text-label-md font-bold text-on-surface line-clamp-1">
+              Budhram Tour And Travels | Luxury Force Tempo Traveller Rental
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Pan-India private charter fleet with transparent kilometre meter billing. Executive pushback suites and mountain drivers.
+            </p>
+</div>
+<!-- Contact & Footer Sync Quick Card -->
+<div class="mt-space-md p-space-sm rounded-xl bg-surface-canvas space-y-1.5">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Live Contact Endpoint Syncer</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Phone &amp; WhatsApp:</span>
+<strong class="text-on-surface">+91 9310847853</strong>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Support Mail:</span>
+<strong class="text-on-surface">Deepanshuprajapati520@gmail.com</strong>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Operating Base:</span>
+<strong class="text-on-surface">Delhi NCR • All-India Permits</strong>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto-synced with footer scripts</span>
+<button class="px-space-md py-1.5 rounded-xl bg-surface-subtle text-on-surface font-label-md text-label-md font-bold hover:bg-surface-container-high transition-colors" onclick="triggerToast('Contact endpoints synced across all public templates')">
+            Sync Contact Endpoints
+          </button>
+</div>
+</div>
+</div>
+<!-- Media Asset Manager & Cabin Showcase Gallery Controller -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Cabin Showcase &amp; Fleet Media Gallery</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">High-resolution imagery deployed on the interactive modal gallery at budhramtravels.com</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-charcoal-accent transition-colors flex items-center gap-1" onclick="triggerToast('Opening media upload drawer')">
+<span class="material-symbols-outlined text-[16px]">add_photo_alternate</span>
+<span>Upload High-Res Media</span>
+</button>
+</div>
+</div>
+<!-- Gallery Grid of Cabin Views -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Media 1: Exterior Cruiser -->
+<div class="group rounded-xl overflow-hidden bg-surface-subtle shadow-sm flex flex-col justify-between">
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dark Metallic Grey Force Executive Cruiser parked gracefully along scenic mountain road in Himachal with high roof and tinted windows, captured in warm daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxHT1lbYlU3wkpzxEeZSMOoPV5zb0hyVSpj1niYyD90iLTtc26XaiNjGGMbTEM0-jBYL-3FSCr3QVZigo3Tii6z92Jh5_B28Ltxdv4hNPyn5UKmeRO4phbsowDTuV0odPxnhso6Fy1gDOwWoHFK_GzkS6iErxbNpQ5y3xckYoDK8ZU6CL1lRzg3KcFcBQhXQOUtObvg3scc5OW8cqtO-ibhweF_t2cfb9dsBeglKE-ijBgMD0D_1ND"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-xl bg-primary/90 text-on-primary font-label-sm text-label-sm font-bold">Exterior View</span>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-1">
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Dark Grey Executive Cruiser</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Flagship exterior hero asset</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-status-verified font-semibold">Live in Gallery</span>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-bold" onclick="triggerToast('Replaced hero image slot')">Replace</button>
+</div>
+</div>
+</div>
+<!-- Media 2: First Class Recliners -->
+<div class="group rounded-xl overflow-hidden bg-surface-subtle shadow-sm flex flex-col justify-between">
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Interior passenger cabin of a luxury Force Tempo Traveller showing immaculate cream leatherette pushback recliners, woodgrain armrests, and soft ambient ceiling LED strip lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq5XtSVObFlkHapls6p3-B_WxpJYonZ34Vibg-kgQBwpRaf_cXr1Yt4_BhbQctkz-O7mW1r70P_gri90oUhZ7alU6uniVaEr1-u9qY-4SRhsKJ1UEoqh_lb5RTzLwciK40zqqcL1DpMSlPvk7ahdnasc6cAcThJnVdyeJ6OglEZyh4YEMIekpKOb8eHTDZy275TqdY7wo11ViFk_IVwuIv-lInWvespkct1asyqhmwFpg7k-eQLvp8"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-xl bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Cabin Luxury</span>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-1">
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Cream Leatherette Recliners</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Maharaja interior pushback showcase</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-status-verified font-semibold">Live in Gallery</span>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-bold" onclick="triggerToast('Replaced interior suite photo')">Replace</button>
+</div>
+</div>
+</div>
+<!-- Media 3: Mahogany Console Cockpit -->
+<div class="group rounded-xl overflow-hidden bg-surface-subtle shadow-sm flex flex-col justify-between">
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Chauffeur cockpit of a customized Force Tempo Traveller featuring glossy polished mahogany woodgrain dashboard, modern GPS navigation screen, and leather-wrapped steering wheel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYtZHHjEkg7z5S9FTmKoC18_NVswdbLLk04tqKO5S_Kw3nBiPB8p-t0Y9AZtUo4wgI0Zv7wlEvbU4sg3le2-gbjGobj_LdzUzv9xQArqhj5y1bN9UxoQH7J9HLTIXxdFfaSU2dzQcn8LzWCAoAwGnnVPmqfBpk05NEGR4fClWOvDExcH8fQRuw_wVUQjvumfiIuGOfcdOsriNjjgB0NkITlstQctFEmsrMvDp3yz_tYUnnEmGHELYN"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-xl bg-charcoal-accent text-on-primary font-label-sm text-label-sm font-bold">Cockpit Deck</span>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-1">
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Mahogany Console &amp; GPS</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Driver command deck showcase</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-status-verified font-semibold">Live in Gallery</span>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-bold" onclick="triggerToast('Cockpit photo slot edited')">Replace</button>
+</div>
+</div>
+</div>
+<!-- Media 4: High Capacity 17S Coach -->
+<div class="group rounded-xl overflow-hidden bg-surface-subtle shadow-sm flex flex-col justify-between">
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Wide perspective shot of a 17-seater grand touring Force coach with continuous overhead air conditioning ducts, wide center gangway, and comfortable ergonomic seating in clean light tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpZq5FCeh_1uhoJRwiyTbnr5RzJT3CT__eFP1INeTM5C7-0GRAVto1YhXpCdl2SEiExv4hGyVdRzR4__HURZ2TOiGOaPddq7Zumk2foawlKwQDWGN4CRLgxPn7PEsoMKJ3-OxlcSNKZJqYzP-BF2UJIVSZJ6Rv79yaUSvlWT97CKYb9yejymP1TQfg3ubZZzdCA3VKz4spnYjlj8dowUw8FsOqPhKZPYVpBhXb7XpycMM8IW1wXmwQ"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-xl bg-primary/90 text-on-primary font-label-sm text-label-sm font-bold">17 Seater</span>
+</div>
+<div class="p-space-sm flex flex-col justify-between flex-1">
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Grand Touring 17S Coach</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">High-capacity pilgrimage fleet</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-status-verified font-semibold">Live in Gallery</span>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-bold" onclick="triggerToast('Grand coach image updated')">Replace</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive System Toast Notification -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="systemToast">
+<div class="bg-primary text-on-primary px-space-md py-3 rounded-xl shadow-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-gold-light text-[20px]">verified</span>
+<span class="font-label-md text-label-md font-semibold" id="toastMessage">Action completed successfully</span>
+</div>
+</div>
+<!-- Inline Script for Tab Navigation, Bookings Filtering, Real-time Search, and Micro-interactions -->
+<script>
+    function switchTab(tabId) {
+      // Hide all panels
+      document.querySelectorAll('.tab-pane').forEach(el => el.classList.add('hidden'));
+      // Show selected panel
+      const target = document.getElementById(tabId);
+      if (target) target.classList.remove('hidden');
+
+      // Update button pill styling
+      document.querySelectorAll('.tab-pill').forEach(btn => {
+        btn.classList.remove('bg-surface-card', 'text-on-surface', 'shadow-sm', 'font-bold');
+        btn.classList.add('font-medium', 'text-on-surface-variant');
+      });
+
+      const activeBtn = document.getElementById('btn-' + tabId);
+      if (activeBtn) {
+        activeBtn.classList.remove('font-medium', 'text-on-surface-variant');
+        activeBtn.classList.add('bg-surface-card', 'text-on-surface', 'shadow-sm', 'font-bold');
+      }
+    }
+
+    function triggerToast(message) {
+      const toast = document.getElementById('systemToast');
+      const msgEl = document.getElementById('toastMessage');
+      if (toast && msgEl) {
+        msgEl.innerText = message;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0');
+        }, 3200);
+      }
+    }
+
+    function filterBookings(category, btnElement) {
+      const rows = document.querySelectorAll('.booking-row');
+      rows.forEach(row => {
+        if (category === 'all' || row.classList.contains(category)) {
+          row.classList.remove('hidden');
+        } else {
+          row.classList.add('hidden');
+        }
+      });
+
+      // Update active filter pill style
+      document.querySelectorAll('.booking-filter-btn').forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'font-bold');
+        btn.classList.add('bg-surface-subtle', 'text-on-surface', 'font-medium');
+      });
+
+      if (btnElement) {
+        btnElement.classList.remove('bg-surface-subtle', 'text-on-surface', 'font-medium');
+        btnElement.classList.add('bg-primary', 'text-on-primary', 'font-bold');
+      }
+    }
+
+    function searchBookingsTable() {
+      const input = document.getElementById('bookingSearchInput');
+      const filter = input.value.toLowerCase();
+      const rows = document.querySelectorAll('.booking-row');
+
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        if (text.includes(filter)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</div></main></div></body></html>
