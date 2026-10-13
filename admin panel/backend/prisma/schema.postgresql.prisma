@@ -1,0 +1,303 @@
+// PostgreSQL Schema for Budhram Tour & Travels Commercial CMS Admin Portal
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String
+  password  String
+  role      String   @default("ADMIN") // ADMIN, DISPATCHER, FLEET_MANAGER
+  phone     String?
+  avatar    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+model Customer {
+  id        String     @id @default(cuid())
+  name      String
+  phone     String     @unique
+  email     String?
+  address   String?
+  city      String?
+  notes     String?
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  bookings  Booking[]
+  enquiries Enquiry[]
+
+  @@map("customers")
+}
+
+model Vehicle {
+  id                    String        @id @default(cuid())
+  regNumber             String        @unique
+  name                  String
+  tier                  String
+  seatingCapacity       Int
+  color                 String?
+  features              String?
+  ratePerKm             Decimal       @db.Decimal(12, 2)
+  driverAllowancePerDay Decimal       @db.Decimal(12, 2)
+  status                String        @default("IDLE")
+  currentOdometer       Float
+  nextServiceDueKm      Float?
+  assignedDriverId      String?
+  imageUrl              String?
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+  driver                Driver?       @relation(fields: [assignedDriverId], references: [id])
+  bookings              Booking[]
+  odometerLogs          OdometerLog[]
+
+  @@index([status])
+  @@map("vehicles")
+}
+
+model Driver {
+  id              String        @id @default(cuid())
+  name            String
+  phone           String
+  licenseNumber   String
+  experienceYears Int?
+  certifiedPasses String?
+  status          String        @default("AVAILABLE")
+  rating          Float?
+  photoUrl        String?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  vehicles        Vehicle[]
+  bookings        Booking[]
+  odometerLogs    OdometerLog[]
+
+  @@map("drivers")
+}
+
+model TripPackage {
+  id               String    @id @default(cuid())
+  title            String
+  slug             String    @unique
+  destination      String
+  startingLocation String?
+  duration         String?
+  distanceKm       Float?
+  basePrice        Decimal   @db.Decimal(12, 2)
+  priceType        String?
+  featured         Boolean   @default(false)
+  status           String    @default("ACTIVE")
+  overview         String?
+  includedServices String?
+  excludedServices String?
+  images           String?
+  highlightBadge   String?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  bookings         Booking[]
+
+  @@map("trip_packages")
+}
+
+model Booking {
+  id             String       @id @default(cuid())
+  pnr            String       @unique
+  customerId     String
+  tripPackageId  String?
+  vehicleId      String?
+  driverId       String?
+  pickupLocation String?
+  destination    String?
+  travelDate     DateTime
+  returnDate     DateTime?
+  passengerCount Int?
+  estimatedKm    Float?
+  actualKm       Float?
+  ratePerKm      Decimal?     @db.Decimal(12, 2)
+  totalAmount    Decimal      @db.Decimal(12, 2)
+  advancePaid    Decimal      @db.Decimal(12, 2)
+  paymentStatus  String
+  bookingStatus  String       @default("PENDING")
+  source         String?
+  specialNotes   String?
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  customer       Customer     @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  tripPackage    TripPackage? @relation(fields: [tripPackageId], references: [id], onDelete: SetNull)
+  vehicle        Vehicle?     @relation(fields: [vehicleId], references: [id], onDelete: Restrict)
+  driver         Driver?      @relation(fields: [driverId], references: [id], onDelete: Restrict)
+  payments       Payment[]
+
+  @@index([bookingStatus])
+  @@index([travelDate])
+  @@map("bookings")
+}
+
+model Payment {
+  id            String   @id @default(cuid())
+  transactionId String   @unique
+  bookingId     String
+  amount        Decimal  @db.Decimal(12, 2)
+  paymentMethod String
+  paymentStatus String   @default("PAID")
+  paymentDate   DateTime @default(now())
+  referenceNote String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  booking       Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+
+  @@index([paymentDate])
+  @@map("payments")
+}
+
+model Enquiry {
+  id                 String    @id @default(cuid())
+  customerId         String?
+  name               String
+  phone              String
+  email              String?
+  pickupLocation     String?
+  destinationCircuit String?
+  travelDate         DateTime?
+  passengers         String?
+  vehicleChoice      String?
+  message            String?
+  estimatedFare      Decimal?  @db.Decimal(12, 2)
+  status             String    @default("NEW")
+  internalNotes      String?
+  source             String?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+  customer           Customer? @relation(fields: [customerId], references: [id], onDelete: SetNull)
+
+  @@index([status])
+  @@map("enquiries")
+}
+
+model OdometerLog {
+  id              String   @id @default(cuid())
+  vehicleId       String
+  driverId        String?
+  tripPnr         String?
+  startOdometer   Float
+  endOdometer     Float?
+  totalKm         Float?
+  billableKm      Float?
+  fuelLitres      Float?
+  fuelCost        Decimal? @db.Decimal(12, 2)
+  tollTaxes       Decimal? @db.Decimal(12, 2)
+  variancePercent Float?
+  auditStatus     String?
+  notes           String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  vehicle         Vehicle  @relation(fields: [vehicleId], references: [id], onDelete: Restrict)
+  driver          Driver?  @relation(fields: [driverId], references: [id], onDelete: SetNull)
+
+  @@map("odometer_logs")
+}
+
+model MediaItem {
+  id         String   @id @default(cuid())
+  title      String
+  category   String?
+  url        String
+  alt        String?
+  size       String?
+  isFeatured Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@map("media_items")
+}
+
+model Testimonial {
+  id           String   @id @default(cuid())
+  customerName String
+  location     String?
+  circuit      String?
+  rating       Int
+  content      String
+  vehicleUsed  String?
+  featured     Boolean  @default(false)
+  status       String   @default("PENDING")
+  reviewDate   DateTime @default(now())
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("testimonials")
+}
+
+model WebsiteContent {
+  id              String    @id @default(cuid())
+  key             String    @unique
+  data            String
+  lastPublishedAt DateTime?
+  publishedBy     String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@map("website_content")
+}
+
+model SystemNotification {
+  id        String   @id @default(cuid())
+  title     String
+  message   String
+  type      String   @default("GENERAL")
+  read      Boolean  @default(false)
+  link      String?
+  createdAt DateTime @default(now())
+
+  @@map("system_notifications")
+}
+
+model SiteSetting {
+  id                 String   @id @default("default")
+  agencyName         String
+  phone              String
+  alternatePhone     String?
+  email              String
+  address            String
+  gstNumber          String?
+  honestKmPledgeText String?
+  defaultTerms       String?
+  updatedAt          DateTime @updatedAt
+
+  @@map("site_settings")
+}
+
+model FareSetting {
+  id                       String   @id @default(cuid())
+  vehicleTier              String
+  baseRatePerKm            Decimal  @db.Decimal(12, 2)
+  driverAllowancePerDay    Decimal  @db.Decimal(12, 2)
+  nightHaltPerNight        Decimal  @db.Decimal(12, 2)
+  hillStateSurchargePerDay Decimal  @db.Decimal(12, 2)
+  minKmPerDay              Int
+  effectiveFrom            DateTime @default(now())
+  createdAt                DateTime @default(now())
+  updatedAt                DateTime @updatedAt
+
+  @@map("fare_settings")
+}
+
+model RouteAdvisory {
+  id            String   @id @default(cuid())
+  routeName     String
+  status        String // OPEN, CLOSED, CAUTION
+  advisoryText  String
+  chainRequired Boolean  @default(false)
+  updatedBy     String?
+  updatedAt     DateTime @updatedAt
+  createdAt     DateTime @default(now())
+
+  @@map("route_advisories")
+}
